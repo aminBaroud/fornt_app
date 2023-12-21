@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './component/header/header.component';
+import { HeaderComponent } from './component/shared/header/header.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { HomeComponent } from './component/pages/home/home.component';
-import { FooterComponent } from './component/footer/footer.component';
+import { FooterComponent } from './component/shared/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './component/auth/login/login.component';
+import { MainMenuComponent } from './component/shared/main_menu/main.menu.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProfileComponent,
     NotFoundComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    MainMenuComponent
   ],
   imports: [
     BrowserModule,

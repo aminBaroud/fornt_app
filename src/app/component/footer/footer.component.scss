@@ -1,0 +1,54 @@
+.footer-bottom {
+  padding: 30px 0;
+}
+
+.footer-bottom span {
+  font-size: 14px;
+  padding-right: 35px;
+  font-family: 'Conv_Circular Std Medium';
+}
+
+.footer-bottom a {
+  font-size: 14px;
+  color: #809090;
+  padding: 0 10px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: -100%;
+  right: 25px;
+  transition: all 0.3s ease-out;
+}
+
+.show {
+  bottom: 25px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .footer-bottom a {
+      font-size: 13px;
+      padding: 0 6px;
+  }
+
+  .footer-bottom span {
+      font-size: 13px;
+      padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .footer-bottom span {
+      display: block;
+      padding: 15px 0 30px;
+      font-size: 16px;
+  }
+
+  .footer-bottom .col a {
+      padding: 4px 0px;
+      display: block;
+      font-size: 15px;
+  }
+}

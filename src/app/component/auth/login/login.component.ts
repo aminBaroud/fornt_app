@@ -13,4 +13,8 @@ export class LoginComponent {
     this.isActive = !this.isActive;
   }
 
+  public submit(){
+    console.log('i clicked here ');
+  }
+
 }

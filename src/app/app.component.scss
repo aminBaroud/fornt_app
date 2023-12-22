@@ -1,4 +1,33 @@
+
 *{
   margin: 0px;
   padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: CircularStd;
+  src: url(../assets/fonts/circular/normal/Circular-Std-Book.ttf);
+}
+@font-face {
+  font-family: Intro;
+  src: url(../assets/fonts/intro/Intro.otf);
+}
+
+.root-level{
+  display: flex;
+  align-items: center;
+}
+.child{
+  align-self: stretch;
+}
+
+.btn-custom-danger{
+  background:#CA0010;
+  color: white;
+}
+.btn-custom-danger:hover{
+  background:rgb(202, 0, 16, .5);
+  color: whitesmoke;
 }

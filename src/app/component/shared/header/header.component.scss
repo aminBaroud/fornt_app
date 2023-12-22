@@ -2,6 +2,30 @@
   align-items: center;
   justify-content: center;
 }
+.logo{
+  position: relative;
+  top: 35px;
+}
+.navbar-nav {
+  flex-direction:row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.btn-custom-danger{
+  background:#CA0010;
+  color: white;
+}
+.btn-custom-danger:hover{
+  background:rgb(202, 0, 16, .5);
+  color: whitesmoke;
+}
+.sign-up{
+float: right;
+position: relative;
+top: -55px;
+}
 
 .navbar-nav li.nav-item.active a:after {
   content: '';
@@ -10,10 +34,18 @@
   background: #66c346;
   display: block;
 }
-
+li a{
+  text-decoration: none;
+  color:#809090;
+  }
+li a:hover{
+    text-decoration: none;
+    color:black;
+}
 .nav-item{
   display: inline;
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -74,13 +106,13 @@ nav.navbar {
 }
 
 .navbarFixedTop {
-  background: #f9fafe;
-  position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
   top: 0;
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 1000;
 }
 
 @media only screen and (min-width: 768px) {

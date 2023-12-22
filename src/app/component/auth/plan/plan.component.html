@@ -4,6 +4,36 @@
   <img src="../../../../assets/img/register/TopMask@2x.svg" width="700"  class="TopMask"/>
 </div>
 
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [style]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="top-image">
+        <div class="background">
+            <img src="../../../../assets/img/payment/Payment details.png" />
+        </div>
+      </div>
+
+    <div class="fields">
+        <div class="title">
+          Payment details!
+        </div>
+        <div class="sub-title">Add your card details</div>
+        <div class="name"><input type="text" class="form-control" name="name" id="name" placeholder="&#61447;  Name on the Card *"></div>
+        <div class="card"><input type="text" class="form-control" name="card_number" id="card_number" placeholder="Card number *"></div>
+        <div class="expiration"><input type="text" class="form-control" name="expiration" id="expiration" placeholder="Expiration date *"></div>
+        <div class="security"><input type="text" class="form-control" name="security" id="security" placeholder="Security code *"></div>
+        <div class="cancel" (click)="closePopup()"><button class="btn btn-custom-cancel form-control">CANCEL</button></div>
+        <div class="add" (click)="submit()"><button class="btn btn-custom-danger form-control">ADD</button></div>
+
+  </div>
+  </div>
+  </div>
+</div>
+
 
 <div class="mains">
   <div class="MainText">Choose your plan</div>
@@ -39,7 +69,7 @@
         01
       </div>
       <div class="select-button">
-        <button class="btn btn-custom-danger">Select</button>
+        <button class="btn btn-custom-danger" (click)="openPopup('free')">Select</button>
       </div>
     </div>
   </div>
@@ -75,7 +105,7 @@
         02
       </div>
       <div class="select-button">
-        <button class="btn btn-custom-danger">Select</button>
+        <button class="btn btn-custom-danger" (click)="openPopup('basic')">Select</button>
       </div>
     </div>
   </div>
@@ -112,7 +142,7 @@
         03
       </div>
       <div class="select-button">
-        <button class="btn btn-custom-danger">Select</button>
+        <button class="btn btn-custom-danger" (click)="openPopup('premium')">Select</button>
       </div>
     </div>
   </div>
@@ -144,13 +174,13 @@
 
       <div class="sub-price">
         <div class="title"> Price:</div>
-        <div class="basic-price">$20/Year</div>
+        <div class="basic-price">$40/Year</div>
       </div>
       <div class="number">
         04
       </div>
       <div class="select-button">
-        <button class="btn btn-custom-danger" (click)="openModal()">Select</button>
+        <button class="btn btn-custom-danger" (click)="openPopup('executive')">Select</button>
       </div>
     </div>
   </div>
@@ -162,22 +192,4 @@
 <div class="ButtomRight">
   <img src="../../../../assets/img/register/ButtomRight@2x.svg" width="470" />
 </div>
-</div>
-
-
-<div class="modal-header">
-  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-  <button
-    type="button"
-    class="btn-close"
-    aria-label="Close"
-    (click)="modalRef.close()"
-  ></button>
-</div>
-<div class="modal-body">...</div>
-<div class="modal-footer">
-  <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
-    Close
-  </button>
-  <button type="button" class="btn btn-primary">Save changes</button>
 </div>

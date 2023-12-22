@@ -1,17 +1,27 @@
 import { Component } from '@angular/core';
-import { MdbModalRef , MdbModalService  } from 'mdb-angular-ui-kit/modal';
 @Component({
   selector: 'app-plan',
   templateUrl: './plan.component.html',
   styleUrl: './plan.component.scss'
 })
 export class PlanComponent {
-  constructor(public modalRef: MdbModalRef<ModalComponent>) {}
+
+  displayStyle = "none";
+  plan = "";
+  openPopup(value:any) {
+    console.log(value);
+    this.plan = value;
+    this.displayStyle = "block";
+  }
+  closePopup() {
+    this.displayStyle = "none";
+  }
+
   public submit(){
     console.log('i clicked here ');
   }
   openModal() {
-    this.modalRef = this.modalService.open(ModalComponent)
+    console.log('i clicked here ');
   }
 
 }

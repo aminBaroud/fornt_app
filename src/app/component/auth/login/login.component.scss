@@ -29,6 +29,7 @@ background: white;
 border-radius: 20px;
 }
 .login{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +51,9 @@ padding-right: 58px;
 .ManRight img{
   position: relative;
   left:182px;
+}
+.login-fields{
+  width: 470px;
 }
 
 .login-inputs{

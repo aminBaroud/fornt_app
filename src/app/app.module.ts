@@ -9,7 +9,6 @@ import { HomeComponent } from './component/pages/home/home.component';
 import { FooterComponent } from './component/shared/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './component/auth/login/login.component';
-import { MainMenuComponent } from './component/shared/main_menu/main.menu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { MainMenuComponent } from './component/shared/main_menu/main.menu.compon
     HomeComponent,
     FooterComponent,
     LoginComponent,
-    MainMenuComponent
   ],
   imports: [
     BrowserModule,

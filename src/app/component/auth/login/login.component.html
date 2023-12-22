@@ -1,12 +1,39 @@
-<div class="logo">
-  <app-header></app-header>
-</div>
-<div>
-  <app-main-menu></app-main-menu>
-</div>
 
-<div>
-  <app-footer></app-footer>
+<div class="login-section">
+<div class="masks">
+  <img src="../../../../assets/img/login/TopMask@2x.svg" width="800"  class="TopMask"/>
+  <img src="../../../../assets/img/login/Mask@2x.svg" width="800" class="Mask"/>
 </div>
 
 
+<div class="mains">
+  <div class="login">
+
+    <div class="ManRight">
+      <img src="../../../../assets/img/login/ManRight.png" width="348" />
+    </div>
+  <div class="login-div">
+        <div class="login-fields">
+          <div class="login-inputs">
+            <div class="title">Welcome back!</div>
+            <div class="looking"> Looking for talent? <a href="#">Company Log in!</a></div>
+            <div class="email"><input type="email" class="form-control" name="email" id="email" placeholder="&#61664; Email"></div>
+            <div class="password"><input type="{{ isActive ? 'password' : 'text' }}"  class="form-control" name="password" id="password" placeholder="&#61475; Password">
+            <div class="view-password"><span (click)="showPassword()"><i class="fa fa-eye-slash" aria-hidden="true"></i></span></div>
+            </div>
+            <div class="forget"><a href="#">Forgot password</a></div>
+
+            <div class="login" ><button class="btn btn-custom-danger form-control">LOG IN</button></div>
+            <div class="signup">Don't have an account yet? <a href="#">Sign up!</a></div>
+        </div>
+        </div>
+    </div>
+    <div class="ManLeft">
+      <img src="../../../../assets/img/login/ManLeft@2x.svg" width="433" />
+    </div>
+
+
+  </div>
+
+</div>
+</div>

@@ -1,9 +1,19 @@
 *{
   margin: 0px;
   padding: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 @font-face {
   font-family: CircularStd;
   src: url(../assets/fonts/circular/normal/Circular-Std-Book.ttf);
+}
+
+.root-level{
+  display: flex;
+  align-items: center;
+}
+.child{
+  align-self: stretch;
 }

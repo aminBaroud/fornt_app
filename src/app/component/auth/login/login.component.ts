@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+ isActive =true;
+  public showPassword(){
+    console.log('i clicked here ');
+
+    this.isActive = !this.isActive;
+  }
 
 }

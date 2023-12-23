@@ -1,3 +1,38 @@
+.TopButtons{
+  position: absolute;
+  right: 80px;
+  top: 45px;
+  z-index: 2000;
+  .login{
+    position: relative;
+    float: right;
+    width: 113px;
+    height: 45px;
+    left: -40px;
+  }
+
+  .signin{
+    position: relative;
+    float: right;
+    width: 113px;
+    height: 45px;
+  }
+}
+
+.btn-custom-cancel{
+  font-size: 12px;
+  font-family: 'CircularStd';
+  line-height: 14px;
+  background:rgb(244, 246, 253);
+  color: #1F1F1F;
+  width: 100%;
+  text-transform: uppercase;
+  height: 45px;
+}
+.btn-custom-cancel:hover{
+  background:rgb(244, 246, 253, .5);
+  color: gray;
+}
 .navbar-collapse {
   align-items: center;
   justify-content: center;
@@ -46,6 +81,12 @@ li a:hover{
   display: inline;
   padding-left: 20px;
   padding-right: 20px;
+  .selected{
+    background-image: url("../../../../assets/img/menu/selected.png");
+    background-size: 100% 9%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link {

@@ -1,0 +1,101 @@
+.modal-dialog{
+  width: 471px;
+  height: 727px;
+.top-image{
+  width: 100%;
+  height: 250px;
+  .background{
+    background-image: url(../../../../../../assets/img/reference/welcome/topModal.png);
+    background-size: 100%;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    img{
+      top: 30px;
+      position: relative;
+    }
+  }
+
+}
+.fields{
+  width: 350px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+}
+
+.title{
+  position: relative;
+  font-size: 22px;
+  font-family: 'CircularStd';
+  line-height: 30px;
+  text-align: center;
+  color:#1F1F1F;
+}
+.text{
+  top: 30px;
+  min-height: 200px;
+  position: relative;
+  font-size: 14px;
+  font-family: 'CircularStd';
+  text-align: center;
+  color:#809090;
+  span{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'CircularStd';
+    text-align: center;
+    color:#002F9C;
+  }
+}
+
+.buttons{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.add{
+  position: relative;
+  width:165px;
+  float: left;
+  left: 20px;
+}
+.cancel{
+  position: relative;
+  float: left;
+  width:165px;
+}
+.btn-custom-danger{
+  font-size: 12px;
+  font-family: 'CircularStd';
+  line-height: 14px;
+  background:#CA0010;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  height: 45px;
+}
+.btn-custom-danger:hover{
+  background:rgb(202, 0, 16, .5);
+  color: whitesmoke;
+}
+
+.btn-custom-cancel{
+  font-size: 12px;
+  font-family: 'CircularStd';
+  line-height: 14px;
+  background:rgb(244, 246, 253);
+  color: #1F1F1F;
+  width: 100%;
+  text-transform: uppercase;
+  height: 45px;
+}
+.btn-custom-cancel:hover{
+  background:rgb(244, 246, 253, .5);
+  color: gray;
+}
+
+
+}

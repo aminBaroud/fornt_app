@@ -1,0 +1,74 @@
+<div class="topLeft">
+  <img src="../../../../../assets/img/reference/welcome/topLeft.png" />
+</div>
+<div class="content">
+
+<div class="welcome-text">
+  <div class="title">
+    Welcome to Talent Checks!
+  </div>
+  <div class="text">
+    Talent Checks helps candidates collecting, securely storing, and easily sharing their reference checks with all the employers they are exploring opportunities with. To ensure the objectivity of the references collected, only employers will be able to view any references submitted on Talent Checks when they are securely shared with them through our platform. Candidates will know if a reference request is completed, if the employers viewed it, but will not have access to view the details of the reference.
+  </div>
+
+</div>
+<div class="waiting">
+  <div class="title">
+    You have 3 reference requests, press here to complete
+  </div>
+ <div class="displayed-table">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Relationship</th>
+        <th scope="col">Date</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Walker</td>
+        <td>Manager</td>
+        <td>15/03/21</td>
+        <td>
+          <div class="display-buttons">
+            <button class="btn btn-custom-cancel form-control" (click)="decline()">Decline</button>
+            <button class="btn btn-custom-danger form-control" (click)="complete(1)">Complete</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <tr>
+          <td>John Walker</td>
+          <td>Manager</td>
+          <td>15/03/21</td>
+          <td>
+            <div class="display-buttons">
+              <button class="btn btn-custom-cancel form-control" (click)="decline()">Decline</button>
+              <button class="btn btn-custom-danger form-control" (click)="complete(2)">Complete</button>
+            </div>
+          </td>
+        </tr>
+      <tr>
+        <tr>
+          <td>John Walker</td>
+          <td>Manager</td>
+          <td>15/03/21</td>
+          <td>
+            <div class="display-buttons">
+              <button class="btn btn-custom-cancel form-control" (click)="decline()">Decline</button>
+              <button class="btn btn-custom-danger form-control" (click)="complete(3)">Complete</button>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+ </div>
+</div>
+
+</div>
+
+<div class="rightBG"></div>
+<div class="bottomRight"></div>
+<app-reference-model></app-reference-model>

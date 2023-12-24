@@ -11,13 +11,20 @@
           <ul class="navbar-nav">
             @for (item of navigationItems; track $index) {
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="item.href">{{ item.text }}</a>
+              <a class="nav-link {{item.selected}}" [routerLink]="item.href">{{ item.text }}</a>
             </li>
             }
           </ul>
         </nav>
-        <div class="sign-up">
+        <div [hidden]="isVisible" class="sign-up">
           <button class="btn btn-custom-danger">SIGN UP</button>
+        </div>
+
+        <div  class="TopButtons">
+          <div [hidden]="isConnected">
+            <div class="signin"><button class="btn btn-custom-danger form-control" routerLink="signup">SIGN IN</button></div>
+            <div class="login"><button class="btn btn-custom-cancel form-control" routerLink="login">LOG IN</button></div>
+          </div>
         </div>
       </nav>
     </div>

@@ -1,0 +1,35 @@
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [style]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="top-image">
+        <div class="background">
+            <img [src]="image" />
+        </div>
+      </div>
+
+    <div class="fields">
+        <div class="title">
+          <div [innerHTML]="title"></div>
+        </div>
+        <div class="text">
+          <div [innerHTML]="text"></div>
+        </div>
+      <div [hidden]="!isConfirme">
+        <div class="cancel" (click)="closePopup()"><button class="btn btn-custom-cancel form-control">CANCEL</button></div>
+        <div class="add" (click)="submit()"><button class="btn btn-custom-danger form-control">DECLINE</button></div>
+      </div>
+
+      <div [hidden]="isConfirme">
+        <div class="buttons" (click)="closePopup()">
+            <button class="btn btn-custom-cancel form-control">OK</button>
+        </div>
+      </div>
+
+  </div>
+  </div>
+  </div>
+</div>

@@ -31,3 +31,20 @@
   background:rgb(202, 0, 16, .5);
   color: whitesmoke;
 }
+@media only screen and (max-width: 767px){
+  .root-level{
+    flex: 1;
+    display: flex;
+    width: 100% !important;
+    position: relative;
+    left: 0px;
+    right: 0px;
+  }
+  .child{
+    flex: 1;
+    width: 100% !important;
+    position: relative;
+    left: 0px;
+    right: 0px;
+  }
+}

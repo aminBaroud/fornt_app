@@ -1,3 +1,10 @@
+.home-div{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 423px;
+}
 .topUp{
   position: absolute;
   right: 0px;
@@ -607,6 +614,13 @@ background-size: 100%;
   background-size: 100%;
 }
 
+.mob-tab{
+  display: none !important;
+}
+.desktop-tab{
+  display: flex !important;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 767px) {
 
@@ -637,6 +651,7 @@ background-size: 100%;
     height: 3666.88px;
     background-size: 100% 100%;
     right: 0px;
+    margin-bottom: 350px;
   }
 
   .welcome-text{
@@ -807,8 +822,9 @@ background-size: 100%;
         .image{
           top: 10px;
           img{
-            padding-left: 15px;
             width:80px;
+            position: relative;
+            left: -420px;
           }
         }
       }
@@ -959,6 +975,33 @@ background-size: 100%;
   }
   .upButton{
     display: none;
+  }
+  .desktop-tab{
+    display: none !important;
+  }
+  .mob-tab{
+    display: flex !important;
+  }
+
+  .images{
+    width: 100%;
+
+    .carousel-container{
+      position: relative;
+      top: 0px;
+      color: white;
+      width: 100%;
+      z-index: 10;
+
+      .spotify{
+        width:  300px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
 
 }
@@ -1324,7 +1367,10 @@ background-size: 100%;
     width: 791px;
   height: 971px;
   }
+
+
 }
+
 
 @media only screen and (max-width: 991px) {
 

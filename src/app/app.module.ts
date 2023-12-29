@@ -14,6 +14,7 @@ import { ChosePlanComponent } from './component/auth/chose-plan/chose.plan.compo
 import { PlanComponent } from './component/auth/chose-plan/plans/plan.component';
 import { ReferenceModalComponent } from './component/pages/reference/welcome/modal/reference.modal.component';
 import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/reference.welcome.component';
+import { SliderComponent } from './component/auth/chose-plan/slidershow/slider.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/r
     PayModalComponent,
     PlanComponent,
     ReferenceModalComponent,
-    ReferenceWelcomeComponent
+    ReferenceWelcomeComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

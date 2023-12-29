@@ -2,6 +2,11 @@
 .plan-section{
   min-height: 1000px;
 }
+.masks{
+  img{
+    width: 700px;
+  }
+}
 .TopMask{
   right:0px;
   position: absolute;
@@ -388,125 +393,37 @@
   position: relative;
   bottom: -83px;
   left: 0px;
+  width:470px;
+  img{
+    width:470px;
+  }
 }
-.modal-dialog{
-  width: 471px;
-  height: 727px;
-.top-image{
-  width: 100%;
-  height: 250px;
-  .background{
-    background-image: url(../../../../assets/img/payment/payment@2x.svg);
-    background-size: 100%;
-    background-repeat:no-repeat;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+
+@media only screen and (max-width: 767px) {
+  .ButtomRight{
+    position: relative;
+    bottom: -190px;
+    left: 0px;
+    width:316px;
+    z-index: -1;
+    img{
+      width:316px;
+    }
+  }
+  .masks{
+    img{
+      width: 233px;
+    }
   }
 
 }
-.fields{
-  width: 350px;
-  height: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  top: 10px;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 }
-
-.title{
-  position: relative;
-  font-size: 25px;
-  font-family: 'CircularStd';
-  line-height: 30px;
-  text-align: center;
-  color:#1F1F1F;
-}
-.sub-title{
-  position: relative;
-  top: 10px;
-  font-size: 14px;
-  font-family: 'CircularStd';
-  line-height: 22px;
-  text-align: center;
-  color: #809090;
-}
-.name{
-  width:100%;
-  float: left;
-  position: relative;
-  top: 10px;
-  font-size: 14px;
-  font-family:  'CircularStd','FontAwesome';
-}
-.card{
-  width:100%;
-  float: left;
-  position: relative;
-  top: 20px;
-  font-size: 14px;
-  font-family:  'CircularStd','FontAwesome';
-}
-.expiration{
-  float: left;
-  position: relative;
-  top: 30px;
-  font-size: 14px;
-  font-family:  'CircularStd','FontAwesome';
-  width:165px;
+@media only screen and (max-width: 991px) {
 
 }
-.security{
-  float: left;
-  position: relative;
-  top: 30px;
-  font-size: 14px;
-  font-family:  'CircularStd','FontAwesome';
-  width:165px;
-  left: 20px;
-}
-.add{
-  position: relative;
-  top: 50px;
-  width:165px;
-  float: left;
-  left: 20px;
-}
-.cancel{
-  position: relative;
-  top: 50px;
-  float: left;
-  width:165px;
+@media only screen and (max-width: 767px) {
 
 }
-.btn-custom-danger{
-  font-size: 12px;
-  font-family: 'CircularStd';
-  line-height: 14px;
-  background:#CA0010;
-  color: white;
-  width: 100%;
-  text-transform: uppercase;
-  height: 45px;
-}
-.btn-custom-danger:hover{
-  background:rgb(202, 0, 16, .5);
-  color: whitesmoke;
-}
-
-.btn-custom-cancel{
-  font-size: 12px;
-  font-family: 'CircularStd';
-  line-height: 14px;
-  background:rgb(244, 246, 253);
-  color: #1F1F1F;
-  width: 100%;
-  text-transform: uppercase;
-  height: 45px;
-}
-.btn-custom-cancel:hover{
-  background:rgb(244, 246, 253, .5);
-  color: gray;
-}
-
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 }

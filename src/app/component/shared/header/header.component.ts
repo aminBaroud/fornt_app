@@ -12,6 +12,7 @@ export class HeaderComponent {
   activatedRoute: any;
   currentUrl: any;
   isConnected =false;
+  navbarOpen=false;
   navigationItems = [
     { text: "About us", href: "/aboutUs" , selected:"" },
     { text: "Why Talent Check", href: "/whyTalentCheck", selected:"" },
@@ -44,6 +45,9 @@ export class HeaderComponent {
     if(display != null){
       this.isVisible = display !="true";
     }
+  }
+  toggleNavbar(){
+    this.navbarOpen = !this.navbarOpen;
   }
 
 }

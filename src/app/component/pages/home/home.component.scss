@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  margin-bottom: 423px;
+  margin-bottom: 203px;
 }
 .topUp{
   position: absolute;
@@ -623,6 +623,10 @@ background-size: 100%;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 767px) {
+
+  .home-div{
+    margin-bottom: 203px;
+  }
 
   .topUp{
     width: 100%;

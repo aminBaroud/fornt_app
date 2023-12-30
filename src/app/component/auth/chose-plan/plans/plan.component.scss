@@ -350,3 +350,61 @@
     background:rgb(202, 0, 16, .5);
     color: whitesmoke;
   }
+
+  .carousel-container{
+    color: white;
+    top: 200px;
+    position: relative;
+    width: 700px;
+    height: 700px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mob-tab{
+    display: none !important;
+  }
+  .desktop-tab{
+    display: block !important;
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    .mob-tab{
+      display: block !important;
+    }
+
+    .desktop-tab{
+      display: none !important;
+    }
+
+    .carousel-container{
+      position: relative;
+      top: 0px;
+      color: white;
+      width: 100%;
+      z-index: 10;
+    }
+    [class^="plan-"]{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .select-button{
+      display: block !important;
+    }
+
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  }
+  @media only screen and (max-width: 991px) {
+
+  }
+  @media only screen and (max-width: 767px) {
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  }
+

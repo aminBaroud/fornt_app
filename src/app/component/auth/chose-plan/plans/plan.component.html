@@ -1,6 +1,7 @@
 
 <app-pay-model></app-pay-model>
-  <div class="plans">
+<div class="desktop-tab">
+  <div class="plans" >
   <div class="plan-free">
     <div class="top-image">
       <div class="image"></div>
@@ -147,7 +148,162 @@
       </div>
     </div>
   </div>
-
-
 </div>
+</div>
+
+<ngb-carousel class="carousel-container mob-tab carousel-dark slide"  #carousel >
+  <ng-template ngbSlide>
+    <div class="plan-free">
+      <div class="top-image">
+        <div class="image"></div>
+        <div class="text">Free</div>
+      </div>
+      <div class="content">
+        <div class="sub">
+          <div class="title"> Collect:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 1 video/Text reference</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Store::</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 3 months</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Share:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 1 Unlimited shares</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Dashboard:</div>
+          <div class="description"><i class="fa fa-times" aria-hidden="true" style="color: red;"></i> N/A</div>
+        </div>
+
+        <div class="sub-price">
+          <div class="title"> Price:</div>
+          <div class="free-price">FREE</div>
+        </div>
+        <div class="number">
+          01
+        </div>
+        <div class="select-button">
+          <button class="btn btn-custom-danger" (click)="openPopup('free')">Select</button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="plan-basic">
+      <div class="top-image">
+        <div class="image"></div>
+        <div class="text">Basic</div>
+      </div>
+      <div class="content">
+        <div class="sub">
+          <div class="title"> Collect:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 3 video/Text reference</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Store::</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 1 year</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Share:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 1 Unlimited shares</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Dashboard:</div>
+          <div class="description"><i class="fa fa-times" aria-hidden="true" style="color: red;"></i> N/A</div>
+        </div>
+
+        <div class="sub-price">
+          <div class="title"> Price:</div>
+          <div class="basic-price">$20/Year</div>
+        </div>
+        <div class="number">
+          02
+        </div>
+        <div class="select-button">
+          <button class="btn btn-custom-danger" (click)="openPopup('basic')">Select</button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="plan-premium">
+      <div class="top-image">
+        <div class="image"></div>
+        <div class="text">Premium</div>
+        <div class="sub-text"><i class="fa fa-star" aria-hidden="true"></i> <span> Popular plan</span></div>
+      </div>
+      <div class="content">
+        <div class="sub">
+          <div class="title"> Collect:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 5 video/Text reference</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Store::</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 1 year</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Share:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 1 Unlimited shares</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Dashboard:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i>Included</div>
+        </div>
+
+        <div class="sub-price">
+          <div class="title"> Price:</div>
+          <div class="basic-price">$30/Year</div>
+        </div>
+        <div class="number">
+          03
+        </div>
+        <div class="select-button">
+          <button class="btn btn-custom-danger" (click)="openPopup('premium')">Select</button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="plan-executive">
+      <div class="top-image">
+        <div class="image"></div>
+        <div class="text">Executive</div>
+
+      </div>
+      <div class="content">
+        <div class="sub">
+          <div class="title"> Collect:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> Unlimited video/text
+            reference</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Store::</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 1 year</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Share:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i> 1 Unlimited shares</div>
+        </div>
+        <div class="sub">
+          <div class="title"> Dashboard:</div>
+          <div class="description"><i class="fa fa-check" aria-hidden="true"></i>Included</div>
+        </div>
+
+        <div class="sub-price">
+          <div class="title"> Price:</div>
+          <div class="basic-price">$40/Year</div>
+        </div>
+        <div class="number">
+          04
+        </div>
+        <div class="select-button">
+          <button class="btn btn-custom-danger" (click)="openPopup('executive')">Select</button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+</ngb-carousel>
 

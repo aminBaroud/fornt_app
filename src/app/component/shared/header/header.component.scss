@@ -168,6 +168,11 @@ nav.navbar {
   .mob-icon {
       display: none;
   }
+
+  .navbarFixedTop{
+    top:40px;
+  }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -313,6 +318,27 @@ display: none;
       text-align: center;
   }
   .mob-hide{
-display: none;
+    display: none;
+  }
+  .nav-item{
+    padding-left: 5px;
+    padding-right: 5px;
+    .selected{
+      background-image: url("../../../../assets/img/menu/selected.png");
+      background-size: 100% 9%;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+
+  .navbar-nav {
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #809090;
+  }
+  .navbar-collapse{
+    top: 83px;
   }
 }

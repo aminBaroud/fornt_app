@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProfileComponent } from './component/profile/profile.component';
+import { ProfileComponent } from './component/pages/profile/profile.component';
 import { HeaderComponent } from './component/shared/header/header.component';
 import { NotFoundComponent } from './component/pages/not-found/not-found.component';
 import { HomeComponent } from './component/pages/home/home.component';
@@ -10,6 +10,9 @@ import { RegisterComponent } from './component/auth/register/register.component'
 import { ChosePlanComponent } from './component/auth/chose-plan/chose.plan.component';
 import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/reference.welcome.component';
 import { StartComponent } from './component/pages/reference/start/start.component';
+import { RessourcesComponent } from './component/pages/ressources/ressources.component';
+import { ContactUsComponent } from './component/pages/contact-us/contact.us.component';
+import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent , pathMatch: 'full'  },
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path: 'aboutUs', component: HomeComponent, pathMatch: 'full' },
   { path: 'reference', component: ReferenceWelcomeComponent, pathMatch: 'full' },
   { path: 'start', component: StartComponent, pathMatch: 'full' },
+  { path: 'ressources', component: RessourcesComponent, pathMatch: 'full' },
+  { path: 'contact-us', component: ContactUsComponent, pathMatch: 'full' },
+  { path: 'talent-check', component: TalentCheckComponent, pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];
 

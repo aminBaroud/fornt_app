@@ -265,9 +265,33 @@ img{
   background:rgb(244, 246, 253, .5);
 
 }
-
+.mob-tab{
+  display: none !important;
+}
+.desktop-tab{
+  display: flex !important;
+}
 
 @media only screen and (max-width: 767px) {
+
+
+  ::ng-deep .carousel-control-next{
+    right: -50px;
+  }
+  ::ng-deep .carousel-control-prev{
+    left: -50px !important;
+  }
+
+  ::ng-deep .carousel-indicators{
+    bottom: -50px;
+  }
+
+  .desktop-tab{
+    display: none !important;
+  }
+  .mob-tab{
+    display: flex !important;
+  }
 
   .image-left{
     position: relative;

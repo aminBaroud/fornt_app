@@ -71,55 +71,13 @@
       <div class="text">
         1. Tell us a little bit about the professional relationship you had with <span>John Doe</span>
       </div>
-      <div class="square">
-        <div class="buttons">
-          <div class="video">
-            Video
-          </div>
-          <div class="audio">
-            Audio
-          </div>
-          <div class="text-botton">
-            Text
-          </div>
-        </div>
-        <div class="main">
-          <div class="sub-text">
-            Drag and drop
-            <br /> or
-          </div>
-
-          <div class="submit"><button class="btn btn-custom-danger form-control">Record a video</button></div>
-
-        </div>
-      </div>
+ <app-square></app-square>
     </div>
     <div class="upload">
       <div class="text">
         2. What would be John Doe major achievement(s) while working with you?
       </div>
-      <div class="square">
-        <div class="buttons">
-          <div class="video">
-            Video
-          </div>
-          <div class="audio">
-            Audio
-          </div>
-          <div class="text-botton">
-            Text
-          </div>
-        </div>
-        <div class="main">
-          <div class="sub-text">
-            Drag and drop
-            <br /> or
-          </div>
-
-          <div class="submit"><button class="btn btn-custom-danger form-control">Record an Audio</button></div>
-
-        </div>
-      </div>
+      <app-square></app-square>
     </div>
 
   </div>
@@ -131,13 +89,13 @@
       </div>
       <div class="square">
         <div class="square-text">
-          <p> Analytical thinking <span class="star"></span> <span class="star"></span> <span class="star"></span><span class="star"></span><span class="star"></span></p>
-          <p> Active learning <span class="star"></span> <span class="star"></span> <span class="star"></span><span class="star"></span><span class="star"></span></p>
-          <p> Complex problem solving <span class="star"></span> <span class="star"></span> <span class="star"></span><span class="star"></span><span class="star"></span></p>
-          <p> Creativity, originality, and initiative <span class="star"></span> <span class="star"></span> <span class="star"></span><span class="star"></span><span class="star"></span></p>
-          <p> Leadership and social influence <span class="star"></span> <span class="star"></span> <span class="star"></span><span class="star"></span><span class="star"></span></p>
-          <p> Resilience and agility <span class="star"></span> <span class="star"></span> <span class="star"></span><span class="star"></span><span class="star"></span></p>
-          <p> LTechnology use, monitor, and control <span class="star"></span> <span class="star"></span> <span class="star"></span><span class="star"></span><span class="star"></span></p>
+          <p> Analytical thinking <app-star [numberStarts]="5" (selectedValue)="SetStarValue('Analytic',$event)"></app-star></p>
+          <p> Active learning <app-star [numberStarts]="5" (selectedValue)="SetStarValue('Active',$event)"></app-star></p>
+          <p> Complex problem solving <app-star [numberStarts]="5" (selectedValue)="SetStarValue('Complex',$event)"></app-star></p>
+          <p> Creativity, originality, and initiative <app-star [numberStarts]="5" (selectedValue)="SetStarValue('Creativity',$event)"></app-star></p>
+          <p> Leadership and social influence <app-star [numberStarts]="5" (selectedValue)="SetStarValue('Leadership',$event)"></app-star></p>
+          <p> Resilience and agility <app-star [numberStarts]="5" (selectedValue)="SetStarValue('Resilience',$event)"></app-star></p>
+          <p> LTechnology use, monitor, and control <app-star [numberStarts]="5" (selectedValue)="SetStarValue('LTechnology',$event)"></app-star></p>
         </div>
       </div>
     </div>
@@ -145,28 +103,7 @@
       <div class="text">
         4. What would be <span>John Doe</span> top strength(s) and key opportunity area(s)
       </div>
-      <div class="square">
-        <div class="buttons">
-          <div class="video">
-            Video
-          </div>
-          <div class="audio">
-            Audio
-          </div>
-          <div class="text-botton">
-            Text
-          </div>
-        </div>
-        <div class="main">
-          <div class="sub-text">
-            Drag and drop
-            <br /> or
-          </div>
-
-          <div class="submit"><button class="btn btn-custom-danger form-control">Record a video</button></div>
-
-        </div>
-      </div>
+      <app-square></app-square>
     </div>
 
   </div>
@@ -194,16 +131,7 @@
       <div class="square">
         <div class="square-text">
           <p>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
+            <app-star [numberStarts]="8" (selectedValue)="SetStarValue('Compared',$event)"></app-star>
           </p>
 
         </div>

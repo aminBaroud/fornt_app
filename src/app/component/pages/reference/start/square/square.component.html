@@ -1,0 +1,32 @@
+  <div class="square">
+        <div class="buttons">
+          <div class="video {{selected_video}}" (click)="select('video')">
+            Video
+          </div>
+          <div class="audio {{selected_audio}}" (click)="select('audio')">
+            Audio
+          </div>
+          <div class="text-botton {{selected_text}}" (click)="select('text')">
+            Text
+          </div>
+        </div>
+        <div class="main">
+          @if(displayed_text!='add'){
+            <div class="sub-text">
+              Drag and drop
+              <br /> or
+            </div>
+          }
+          @else {
+            <div class="sub-text">
+              Text
+              <input type="text" class="form-control" value="">
+            </div>
+          }
+
+
+
+          <div class="submit"><button class="btn btn-custom-danger form-control">{{displayed_text}}</button></div>
+
+        </div>
+      </div>

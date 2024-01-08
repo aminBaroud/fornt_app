@@ -286,6 +286,12 @@ body {
     background-color: #4566B7;
     background-image: url(../../../../../assets/img/reference/start/video-white.svg);
   }
+  .selected_video{
+    cursor: pointer;
+    color:#fff;
+    background-color: #4566B7;
+    background-image: url(../../../../../assets/img/reference/start/video-white.svg);
+  }
   .audio{
     background:url(../../../../../assets/img/reference/start/audio.svg);
     background-repeat: no-repeat;
@@ -301,6 +307,12 @@ body {
     margin-bottom: 20px;
   }
   .audio:hover{
+    cursor: pointer;
+    color:#fff;
+    background-color: #69C14E;
+    background-image:url(../../../../../assets/img/reference/start/audio-white.svg);
+  }
+  .selected_audio{
     cursor: pointer;
     color:#fff;
     background-color: #69C14E;
@@ -325,7 +337,14 @@ body {
     background-color: #F09E3D;
     background-image:url(../../../../../assets/img/reference/start/text-white.svg);
   }
+  .selected_text{
+    cursor: pointer;
+    color:#fff;
+    background-color: #F09E3D;
+    background-image:url(../../../../../assets/img/reference/start/text-white.svg);
+  }
 }
+
 .main{
   font-family: 'CircularStd';
   font-size: 14px;

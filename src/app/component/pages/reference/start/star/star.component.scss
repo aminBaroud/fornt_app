@@ -1,0 +1,34 @@
+p{
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  justify-content: start;
+  span:first-child{
+    margin-left: 50px;
+  }
+  span{
+    margin-left: 5px;
+  }
+}
+
+.star{
+  display: block;
+  background-image: url(../../../../../../assets/img/reference/start/star-empty.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.star:hover{
+  display: block;
+  background-image: url(../../../../../../assets/img/reference/start/star.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.selected{
+  display: block;
+  background-image: url(../../../../../../assets/img/reference/start/star.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}

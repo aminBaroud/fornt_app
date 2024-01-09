@@ -1,11 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-start-welcome',
-  templateUrl: './start.component.html',
-  styleUrl: './start.component.scss'
+  selector: 'app-square',
+  templateUrl: './square.component.html',
+  styleUrl: './square.component.scss'
 })
-export class StartComponent {
+export class SquareComponent {
 
   selected_video ="";
   selected_audio="";
@@ -42,10 +42,6 @@ export class StartComponent {
   }
   public complete(value:any){
     console.log("Data -- complete");
-
-  }
-  SetStarValue(section:any,data:any){
-    console.log(section,data);
 
   }
 

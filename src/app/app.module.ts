@@ -16,6 +16,9 @@ import { ReferenceModalComponent } from './component/pages/reference/welcome/mod
 import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/reference.welcome.component';
 import { SliderComponent } from './component/auth/chose-plan/slidershow/slider.component';
 import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
+import { SquareComponent } from './component/pages/reference/start/square/square.component';
+import { StartComponent } from './component/pages/reference/start/start.component';
+import { StarComponent } from './component/pages/reference/start/star/star.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { TalentCheckComponent } from './component/pages/talent-check/talent.chec
     ReferenceModalComponent,
     ReferenceWelcomeComponent,
     SliderComponent,
-    TalentCheckComponent
+    TalentCheckComponent,
+    StartComponent,
+    StarComponent,
+    SquareComponent
   ],
   imports: [
     BrowserModule,

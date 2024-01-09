@@ -40,7 +40,7 @@ img{
     width: 280px;
   }
 }
-.talent-check{
+.company-check{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,28 +112,6 @@ img{
           text-align: left;
 
         }
-        .total{
-          background-color: #4566B7;
-          border-color:#4566B7;
-          .number{
-            width: 60px;
-            padding-top:20px;
-            height: 60px;
-            font-size: 30px;
-            font-family: 'CircularStd';
-            text-align: center;
-            border-radius: 60px;
-            background-color: rgba(229, 232, 245,.12);
-            color: white;
-          }
-          .text{
-            font-size: 16px;
-            font-weight: 500;
-            font-family: 'CircularStd';
-            color: #FFFFFF;
-          }
-
-        }
         .completed{
           background-color: #F3FEEF;
           border-color:#F3FEEF;
@@ -158,7 +136,7 @@ img{
 
         }
         .sent{
-          background-color: #FFFAF4;
+          background-color: #F29F2F;
           border-color:#FFFAF4;
           .number{
             width: 60px;
@@ -168,19 +146,19 @@ img{
             font-family: 'CircularStd';
             text-align: center;
             border-radius: 60px;
-            background-color: #FFEFDA;
-            color: #F29F2F;
+            background-color: #F7BE70;
+            color: #FFFFFF;
           }
           .text{
             padding: 10px;
             font-size: 16px;
             font-weight: 600;
             font-family: 'CircularStd';
-            color: #202020;
+            color: white;
           }
 
         }
-        .reviewed{
+        .references{
           background-color: #F9FAFE;
           border-color:#F9FAFE;
           .number{
@@ -317,7 +295,7 @@ img{
       width: 176px;
     }
   }
-  .talent-check{
+  .company-check{
     top: 300px;
     z-index: 20;
     width: 90% !important;
@@ -369,7 +347,7 @@ img{
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-  .talent-check{
+  .company-check{
     top: 300px;
     z-index: 20;
     .content{

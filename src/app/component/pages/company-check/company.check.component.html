@@ -2,47 +2,38 @@
   <img src="../../../../assets/img/reference/welcome/topLeft.png" />
 </div>
 <div class="contents">
-  <div class="talent-check">
+  <div class="company-check">
     <div class="content">
 
       <div class="title">Your talent checks
-        <div class="new_reference"><button class="btn btn-custom-danger form-control" style="width: 200px;">new reference</button></div>
+        <div class="new_reference"><button class="btn btn-custom-danger form-control" style="width: 200px;">new reference Request</button></div>
       </div>
 
-      <div class="sub-title">Here you can see statistics on your references and also manage them.</div>
+      <div class="sub-title">Here you can view references</div>
       <div class="sub-content">
         <div class="top desktop-tab">
-          <button class="total">
-            <div class="number">
-              12
-            </div>
-            <div class="text">
-              Total references
-            </div>
-            </button>
-          <button class="completed">
-            <div class="number">
-              7
-            </div>
-            <div class="text">
-              References completed
-            </div>
-            </button>
           <button class="sent">
-
             <div class="number">
-              4
+              2
             </div>
             <div class="text">
               Total references sent
             </div>
             </button>
-          <button class="reviewed">
+          <button class="completed">
             <div class="number">
-            3
+              1
+            </div>
+            <div class="text">
+              References completed
+            </div>
+            </button>
+          <button class="references">
+            <div class="number">
+            1
           </div>
           <div class="text">
-            References reviewed
+            References completed
           </div>
         </button>
 
@@ -52,29 +43,8 @@
           <ngb-carousel class="carousel-container carousel-dark slide"  #carousel>
             <ng-template ngbSlide>
               <button class="total">
-                <div class="number">
-                  12
-                </div>
-                <div class="text">
-                  Total references
-                </div>
-                </button>
-            </ng-template>
-            <ng-template ngbSlide>
-              <button class="completed">
-                <div class="number">
-                  7
-                </div>
-                <div class="text">
-                  References completed
-                </div>
-                </button>
-            </ng-template>
-            <ng-template ngbSlide>
-              <button class="sent">
-
-                <div class="number">
-                  4
+                <div class="sent">
+                  2
                 </div>
                 <div class="text">
                   Total references sent
@@ -82,18 +52,31 @@
                 </button>
             </ng-template>
             <ng-template ngbSlide>
-              <button class="reviewed">
+              <button class="completed">
                 <div class="number">
-                3
+                  1
+                </div>
+                <div class="text">
+                  References completed
+                </div>
+                </button>
+            </ng-template>
+            <ng-template ngbSlide>
+              <button class="references">
+                <div class="number">
+                1
               </div>
               <div class="text">
-                References reviewed
+                References completed
               </div>
             </button>
             </ng-template>
           </ngb-carousel>
         </div>
         <div class="bottom">
+          <div style="width: 100%;text-align: left;">
+            <input type="text" class="form-control" name="email" id="email" placeholder="⌕   Search by Email or Phone" style="width:300px;">
+          </div>
           <div class="displayed-table">
             <table class="table table-hover">
               <thead>

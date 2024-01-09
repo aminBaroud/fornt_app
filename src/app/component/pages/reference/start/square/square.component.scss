@@ -157,10 +157,10 @@
 
   }
   .user-input-wrp .inputText{
-    width: 100%;
+    width: 90%;
     outline: none;
     border:none;
-    border-bottom: 1px solid #777;
+    border: 1px solid #777;
      box-shadow: none !important;
      font-family: 'CircularStd';
      color: #77848B;
@@ -183,13 +183,18 @@
     left: 10px;
     transition: 0.2s ease all;
     color: #A9B3B8;
-    font-size: 12px;
+    font-size: 16px !important;
   }
-  .user-input-wrp input:focus ~ .floating-label,
-  .user-input-wrp input:not(:focus):valid ~ .floating-label{
+  .user-input-wrp textarea:not(:focus):valid ~ .floating-label{
+    top: 25px;
+    left: 30px;
+    font-size: 16px !important;
+  }
+
+  .user-input-wrp textarea:focus ~ .floating-label{
     top: 0px;
-    left: 10px;
-    font-size: 13px;
+    left: 20px;
+    font-size: 13px !important;
     opacity: 1;
     font-family: 'CircularStd';
     color: #A9B3B8;
@@ -198,7 +203,6 @@
   }
 }
 }
-
 
 .btn-custom-danger{
   font-size: 12px;

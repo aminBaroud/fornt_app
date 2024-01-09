@@ -19,6 +19,7 @@ import { TalentCheckComponent } from './component/pages/talent-check/talent.chec
 import { SquareComponent } from './component/pages/reference/start/square/square.component';
 import { StartComponent } from './component/pages/reference/start/start.component';
 import { StarComponent } from './component/pages/reference/start/star/star.component';
+import { CompanyCheckComponent } from './component/pages/company-check/company.check.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { StarComponent } from './component/pages/reference/start/star/star.compo
     TalentCheckComponent,
     StartComponent,
     StarComponent,
-    SquareComponent
+    SquareComponent,
+    CompanyCheckComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,7 @@ import { StartComponent } from './component/pages/reference/start/start.componen
 import { RessourcesComponent } from './component/pages/ressources/ressources.component';
 import { ContactUsComponent } from './component/pages/contact-us/contact.us.component';
 import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
+import { CompanyCheckComponent } from './component/pages/company-check/company.check.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent , pathMatch: 'full'  },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'ressources', component: RessourcesComponent, pathMatch: 'full' },
   { path: 'contact-us', component: ContactUsComponent, pathMatch: 'full' },
   { path: 'talent-check', component: TalentCheckComponent, pathMatch: 'full' },
+  { path: 'company-check', component: CompanyCheckComponent, pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];
 

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RessourcesComponent } from './ressources.component';
+import { RessourcesComponent } from './resources.component';
 
 describe('HomeComponent', () => {
   let component: RessourcesComponent;
@@ -8,9 +8,8 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [RessourcesComponent]
-    })
-    .compileComponents();
+      declarations: [RessourcesComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(RessourcesComponent);
     component = fixture.componentInstance;

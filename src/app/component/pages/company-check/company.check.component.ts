@@ -1,9 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-
-import { UpgradeModalComponent } from './modals/upgrade-modal/upgrade.modal.component';
-import { ConfirmDeleteModalComponent } from './modals/confirm-delete-modal/confirm.delete.modal.component';
-import { ConfirmSentModalComponent } from './modals/sent-modal/sent.modal.component';
-
+import { ViewReferenceModalComponent } from '../modals/view-reference/view.reference.modal.component';
 @Component({
   selector: 'app-company-check',
   templateUrl: './company.check.component.html',
@@ -22,9 +18,9 @@ export class CompanyCheckComponent {
 
   ];
 
-  @ViewChild(ConfirmSentModalComponent) ConfirmSentModalComponent: any ;
+  @ViewChild(ViewReferenceModalComponent) ViewReferenceModalComponent: any ;
   openPopup() {
-    this.ConfirmSentModalComponent.openPopup();
+    this.ViewReferenceModalComponent.openPopup();
   }
   constructor(){
     localStorage.setItem('showLogin','false');

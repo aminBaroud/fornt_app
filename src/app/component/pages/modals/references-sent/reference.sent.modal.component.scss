@@ -1,29 +1,16 @@
 .modal-dialog{
-  width: 471px;
-  height: 526px;
-.top-image{
-  width: 100%;
-  height: 250px;
-  .background{
-    background-image: url(../../../../../../assets/img/modals/request.svg);
-    background-size: 100%;
-    background-repeat:no-repeat;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    img{
-      position: relative;
-      top: 40px;
-    }
-  }
+  width: 1095px;
+  max-width:1095px !important;
+  height: 755px;
 
-}
 .fields{
-  width: 350px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  top: 10px;
+  position: relative;
+  width: 96%;
+
+  height: 755px;
+  margin-left: 2%;
+  margin-right: 2%;
+  top: 50px;
 }
 
 .title{
@@ -44,50 +31,89 @@
   text-align: center;
   color: #809090;
 }
-.name{
-  width:100%;
-  float: left;
-  position: relative;
-  top: 10px;
-  font-size: 14px;
-  font-family:  'CircularStd','FontAwesome';
-}
-.card{
-  width:100%;
-  float: left;
-  position: relative;
-  top: 20px;
-  font-size: 14px;
-  font-family:  'CircularStd','FontAwesome';
-}
-.expiration{
+.first-name{
   float: left;
   position: relative;
   top: 30px;
   font-size: 14px;
-  font-family:  'CircularStd','FontAwesome';
+  font-family:  'CircularStd','Font Awesome 5 Free';
   width:165px;
+  padding-bottom: 20px;
 
 }
-.security{
+.last-name{
   float: left;
   position: relative;
   top: 30px;
   font-size: 14px;
-  font-family:  'CircularStd','FontAwesome';
+  font-family:  'CircularStd','Font Awesome 5 Free';
   width:165px;
   left: 20px;
+  padding-bottom: 20px;
 }
 
+.email{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  padding-bottom: 20px;
+}
+.phone{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  left: 20px;
+  padding-bottom: 20px;
+}
+
+.company{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  padding-bottom: 40px;
+}
+.job{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  left: 20px;
+  padding-bottom: 40px;
+}
+
+.relation{
+  width:100%;
+  float: left;
+  position: relative;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  padding-bottom: 20px;
+}
+.add{
+  position: relative;
+  width:165px;
+  float: left;
+  left: 20px;
+}
 .cancel{
   position: relative;
-  top: 50px;
-  float: left;
-  width:100%;
+  width: 100%;
   text-align: center;
   button{
-    width:165px ;
+    width:165px;
   }
+
 
 }
 .btn-custom-danger{
@@ -130,8 +156,8 @@
   }
 
   .fields{
-    width: 90%;
-    height: 300px;
+    width: 90% !important;
+    height: 755px !important;
     margin-left: 5%;
     margin-right: 5%;
     top: 10px;
@@ -148,52 +174,37 @@
     font-weight: 400;
     line-height: 19px;
   }
-  .name{
-    width:96%;
-    float: left;
-    position: relative;
-    top: 10px;
-    font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
-  }
-  .card{
-    width:96%;
-    float: left;
-    position: relative;
-    top: 20px;
-    font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
-  }
-  .expiration{
-    float: left;
-    position: relative;
-    top: 30px;
-    font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+  .first-name{
     width:45%;
 
   }
-  .security{
-    float: left;
-    position: relative;
-    top: 30px;
-    font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+  .last-name{
     width:45%;
-    left: 20px;
   }
 
-  .cancel{
-    position: relative;
-    top: 50px;
-    float: left;
-    width:100%;
-    text-align: center;
-    button{
-      width:45%;
-    }
-
+  .email{
+    width:45%;
   }
+  .phone{
+    width:45%;
+  }
+
+  .company{
+    padding-bottom: 50px;
+    width:45%;
+  }
+
+
+.job{
+  padding-bottom: 50px;
+  width:45%;
+}
+
+.relation{
+  padding-bottom: 0px;
+  width:96%;
+}
+
 }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

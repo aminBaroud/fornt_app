@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileComponent } from './component/pages/profile/profile.component';
-import { HeaderComponent } from './component/shared/header/header.component';
 import { NotFoundComponent } from './component/pages/not-found/not-found.component';
 import { HomeComponent } from './component/pages/home/home.component';
 import { LoginComponent } from './component/auth/login/login.component';

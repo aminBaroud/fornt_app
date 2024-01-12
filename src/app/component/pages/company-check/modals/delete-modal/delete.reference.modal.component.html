@@ -1,0 +1,28 @@
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [style]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="top-image">
+        <div class="background">
+            <img src="../../../../../../assets/img/modals/delete_icon.svg" />
+        </div>
+      </div>
+
+    <div class="fields">
+        <div class="title">
+          Are you sure
+          you want to delte this reference?
+        </div>
+        <div class="sub-title">
+          By clicking yes, the selected reference(s) will be deleted, you`ll not be able to recover them, and any employer you shared it with them will not be able to view them.
+        </div>
+        <div class="cancel" (click)="closePopup()"><button class="btn btn-custom-cancel form-control">CANCEL</button></div>
+        <div class="add" (click)="submit()"><button class="btn btn-custom-danger form-control">DELETE</button></div>
+
+  </div>
+  </div>
+  </div>
+</div>

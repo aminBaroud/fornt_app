@@ -6,7 +6,7 @@
     <div class="content">
 
       <div class="title">Your talent checks
-        <div class="new_reference"><button class="btn btn-custom-danger form-control" style="width: 200px;">new reference Request</button></div>
+        <div class=""><button  (click)="openPopup()" class="btn btn-custom-danger form-control" style="width: 200px;">new reference Request</button></div>
       </div>
 
       <div class="sub-title">Here you can view references</div>
@@ -42,8 +42,8 @@
         <div class="top mob-tab">
           <ngb-carousel class="carousel-container carousel-dark slide"  #carousel>
             <ng-template ngbSlide>
-              <button class="total">
-                <div class="sent">
+              <button class="sent">
+                <div class="number">
                   2
                 </div>
                 <div class="text">
@@ -118,3 +118,5 @@
   </div>
 </div>
 <div class="rightBG"></div>
+<app-confirm-sent-model></app-confirm-sent-model>
+

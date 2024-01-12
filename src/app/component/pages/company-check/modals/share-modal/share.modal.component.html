@@ -1,0 +1,32 @@
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [style]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="top-image">
+        <div class="background">
+            <img src="../../../../../../assets/img/modals/share.svg" />
+        </div>
+      </div>
+
+    <div class="fields">
+        <div class="title">
+          Share your reference!
+        </div>
+        <div class="sub-title">Enter your previous employer information</div>
+        <div class="first-name"><input type="text" class="form-control" name="first_name" id="first_name" placeholder="&#61447;  First name *" /></div>
+        <div class="last-name"><input type="text" class="form-control" name="lastt_name" id="last_name" placeholder="&#61447;  Last name *"></div>
+        <div class="email"><input type="text" class="form-control" name="email" id="email" placeholder="&#61664;  Email (only corporate emails) *"></div>
+        <div class="phone"><input type="text" class="form-control" name="phone" id="phone" placeholder="&#61589;  Phone number *"></div>
+        <div class="company"><input type="text" class="form-control" name="company" id="company" placeholder="&#61869;  Current company *"></div>
+        <div class="job"><input type="text" class="form-control" name="job" id="job" placeholder="&#61682;  Job title *"></div>
+
+        <div class="cancel" (click)="closePopup()"><button class="btn btn-custom-cancel form-control">CANCEL</button></div>
+        <div class="add" (click)="submit()"><button class="btn btn-custom-danger form-control">ADD</button></div>
+
+  </div>
+  </div>
+  </div>
+</div>

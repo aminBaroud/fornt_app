@@ -1,5 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 
+import { UpgradeModalComponent } from './modals/upgrade-modal/upgrade.modal.component';
+import { ConfirmDeleteModalComponent } from './modals/confirm-delete-modal/confirm.delete.modal.component';
+import { ConfirmSentModalComponent } from './modals/sent-modal/sent.modal.component';
+
 @Component({
   selector: 'app-company-check',
   templateUrl: './company.check.component.html',
@@ -18,7 +22,10 @@ export class CompanyCheckComponent {
 
   ];
 
-
+  @ViewChild(ConfirmSentModalComponent) ConfirmSentModalComponent: any ;
+  openPopup() {
+    this.ConfirmSentModalComponent.openPopup();
+  }
   constructor(){
     localStorage.setItem('showLogin','false');
   }
@@ -30,6 +37,7 @@ export class CompanyCheckComponent {
     console.log("Data -- complete");
 
   }
+
 
 
 }

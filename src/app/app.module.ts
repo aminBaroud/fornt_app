@@ -20,6 +20,13 @@ import { SquareComponent } from './component/pages/reference/start/square/square
 import { StartComponent } from './component/pages/reference/start/start.component';
 import { StarComponent } from './component/pages/reference/start/star/star.component';
 import { CompanyCheckComponent } from './component/pages/company-check/company.check.component';
+import { DeleteReferenceModalComponent } from './component/pages/company-check/modals/delete-modal/delete.reference.reference.modal.component';
+import { ConfirmDeleteModalComponent } from './component/pages/company-check/modals/confirm-delete-modal/confirm.delete.modal.component';
+import { RequestModalComponent } from './component/pages/company-check/modals/request-modal/request.modal.component';
+import { NewReferenceModalComponent } from './component/pages/company-check/modals/new-reference-modal/new.reference.modal.component';
+import { ShareModalComponent } from './component/pages/company-check/modals/share-modal/share.modal.component';
+import { UpgradeModalComponent } from './component/pages/company-check/modals/upgrade-modal/upgrade.modal.component';
+import { ConfirmSentModalComponent } from './component/pages/company-check/modals/sent-modal/sent.modal.component';
 
 @NgModule({
   declarations: [
@@ -40,12 +47,19 @@ import { CompanyCheckComponent } from './component/pages/company-check/company.c
     StartComponent,
     StarComponent,
     SquareComponent,
-    CompanyCheckComponent
+    CompanyCheckComponent,
+    DeleteReferenceModalComponent,
+    ConfirmDeleteModalComponent,
+    RequestModalComponent,
+    NewReferenceModalComponent,
+    ShareModalComponent,
+    UpgradeModalComponent,
+    ConfirmSentModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

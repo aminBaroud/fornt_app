@@ -20,15 +20,15 @@ import { SquareComponent } from './component/pages/reference/start/square/square
 import { StartComponent } from './component/pages/reference/start/start.component';
 import { StarComponent } from './component/pages/reference/start/star/star.component';
 import { CompanyCheckComponent } from './component/pages/company-check/company.check.component';
+import { SharedModule } from './component/shared/shared.module';
+import { CustomModalsModule } from './component/pages/modals/custom.modals.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     ProfileComponent,
     NotFoundComponent,
     HomeComponent,
-    FooterComponent,
     LoginComponent,
     ChosePlanComponent,
     PayModalComponent,
@@ -38,14 +38,14 @@ import { CompanyCheckComponent } from './component/pages/company-check/company.c
     SliderComponent,
     TalentCheckComponent,
     StartComponent,
-    StarComponent,
-    SquareComponent,
-    CompanyCheckComponent
+    CompanyCheckComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    SharedModule,
+    CustomModalsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

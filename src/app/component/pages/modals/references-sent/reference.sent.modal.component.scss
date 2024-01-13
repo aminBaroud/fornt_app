@@ -1,0 +1,219 @@
+.modal-dialog{
+  width: 1095px;
+  max-width:1095px !important;
+  height: 755px;
+
+.fields{
+  position: relative;
+  width: 96%;
+
+  height: 755px;
+  margin-left: 2%;
+  margin-right: 2%;
+  top: 50px;
+}
+
+.title{
+  position: relative;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'CircularStd';
+  line-height: 30px;
+  text-align: center;
+  color:#1F1F1F;
+}
+.sub-title{
+  position: relative;
+  top: 10px;
+  font-size: 14px;
+  font-family: 'CircularStd';
+  line-height: 22px;
+  text-align: center;
+  color: #809090;
+}
+.first-name{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  padding-bottom: 20px;
+
+}
+.last-name{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  left: 20px;
+  padding-bottom: 20px;
+}
+
+.email{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  padding-bottom: 20px;
+}
+.phone{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  left: 20px;
+  padding-bottom: 20px;
+}
+
+.company{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  padding-bottom: 40px;
+}
+.job{
+  float: left;
+  position: relative;
+  top: 30px;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  width:165px;
+  left: 20px;
+  padding-bottom: 40px;
+}
+
+.relation{
+  width:100%;
+  float: left;
+  position: relative;
+  font-size: 14px;
+  font-family:  'CircularStd','Font Awesome 5 Free';
+  padding-bottom: 20px;
+}
+.add{
+  position: relative;
+  width:165px;
+  float: left;
+  left: 20px;
+}
+.cancel{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  button{
+    width:165px;
+  }
+
+
+}
+.btn-custom-danger{
+  font-size: 12px;
+  font-family: 'CircularStd';
+  line-height: 14px;
+  background:#CA0010;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  height: 45px;
+}
+.btn-custom-danger:hover{
+  background:rgb(202, 0, 16, .5);
+  color: whitesmoke;
+}
+
+.btn-custom-cancel{
+  font-size: 12px;
+  font-family: 'CircularStd';
+  line-height: 14px;
+  background:rgb(244, 246, 253);
+  color: #1F1F1F;
+  width: 100%;
+  text-transform: uppercase;
+  height: 45px;
+}
+.btn-custom-cancel:hover{
+  background:rgb(244, 246, 253, .5);
+  color: gray;
+}
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  .modal-dialog{
+    width: 96%;
+  }
+
+  .fields{
+    width: 90% !important;
+    height: 755px !important;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 10px;
+
+
+
+  .title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.77px;
+  }
+  .sub-title{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  .first-name{
+    width:45%;
+
+  }
+  .last-name{
+    width:45%;
+  }
+
+  .email{
+    width:45%;
+  }
+  .phone{
+    width:45%;
+  }
+
+  .company{
+    padding-bottom: 50px;
+    width:45%;
+  }
+
+
+.job{
+  padding-bottom: 50px;
+  width:45%;
+}
+
+.relation{
+  padding-bottom: 0px;
+  width:96%;
+}
+
+}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+@media only screen and (max-width: 991px) {
+
+}
+@media only screen and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}

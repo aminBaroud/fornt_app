@@ -1,0 +1,55 @@
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [style]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+
+    <div class="fields">
+        <div class="title">
+          Reference that was sent to employers
+        </div>
+        <div class="sub-title">
+          Track the statuses of your reference
+        </div>
+        <br />
+        <br />
+        <div class="displayed-table">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col"><input type="checkbox" /></th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile number</th>
+                <th scope="col">Company</th>
+                <th scope="col">Job ttle</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (item of list; track $index) {
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>jonh.doe&#64;gmail.com</td>
+                <td>+5 6567 45 65</td>
+                <td>Lorem ipsum</td>
+                <td>Dolor sit amlet</td>
+                <td>Requested</td>
+              </tr>
+            }
+            </tbody>
+          </table>
+         </div>
+        <div class="cancel" (click)="closePopup()"><button class="btn btn-custom-cancel form-control">OK</button></div>
+
+
+  </div>
+  </div>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 .modal-dialog{
   width: 651px;
+  max-width:651px !important;
   height: 808px;
 .top-image{
   width: 100%;
@@ -16,11 +17,11 @@
 }
 .fields{
   position: relative;
-  width: 350px;
-  height: 410px;
+  width: 550px;
+  height: 510px;
   margin-left: auto;
   margin-right: auto;
-  top: -50px;
+  top: 0px;
 }
 
 .title{
@@ -47,7 +48,7 @@
   top: 30px;
   font-size: 14px;
   font-family:  'CircularStd','Font Awesome 5 Free';
-  width:165px;
+  width:255px;
   padding-bottom: 20px;
 
 }
@@ -57,7 +58,7 @@
   top: 30px;
   font-size: 14px;
   font-family:  'CircularStd','Font Awesome 5 Free';
-  width:165px;
+  width:255px;
   left: 20px;
   padding-bottom: 20px;
 }
@@ -68,7 +69,7 @@
   top: 30px;
   font-size: 14px;
   font-family:  'CircularStd','Font Awesome 5 Free';
-  width:165px;
+  width:255px;
   padding-bottom: 20px;
 }
 .phone{
@@ -77,7 +78,7 @@
   top: 30px;
   font-size: 14px;
   font-family:  'CircularStd','Font Awesome 5 Free';
-  width:165px;
+  width:255px;
   left: 20px;
   padding-bottom: 20px;
 }
@@ -88,7 +89,7 @@
   top: 30px;
   font-size: 14px;
   font-family:  'CircularStd','Font Awesome 5 Free';
-  width:165px;
+  width:255px;
   padding-bottom: 40px;
 }
 .job{
@@ -97,29 +98,38 @@
   top: 30px;
   font-size: 14px;
   font-family:  'CircularStd','Font Awesome 5 Free';
-  width:165px;
+  width:255px;
   left: 20px;
   padding-bottom: 40px;
 }
 
 .relation{
-  width:100%;
+  width:96%;
   float: left;
   position: relative;
   font-size: 14px;
   font-family:  'CircularStd','Font Awesome 5 Free';
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 .add{
   position: relative;
-  width:165px;
+  width:255px;
   float: left;
   left: 20px;
+  text-align: left;
+  button{
+    width: 165px;
+  }
 }
 .cancel{
   position: relative;
   float: left;
-  width:165px;
+  width:255px;
+  text-align: right;
+  button{
+    width: 165px;
+  }
 
 }
 .btn-custom-danger{
@@ -160,10 +170,19 @@
   .modal-dialog{
     width: 96%;
   }
-
+  .top-image{
+    height: 200px !important;
+  .background{
+    background-image: url(../../../../../assets/img/modals/new_ref.svg);
+    background-size: 100% 100% !important;
+    img{
+      width: 180px;
+    }
+  }
+}
   .fields{
     width: 90% !important;
-    height: 440px !important;
+    height: 480px !important;
     margin-left: 5%;
     margin-right: 5%;
     top: 10px;

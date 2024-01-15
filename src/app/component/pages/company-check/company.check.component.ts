@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { ViewReferenceModalComponent } from '../modals/view-reference/view.reference.modal.component';
+import { NewReferenceModalComponent } from '../modals/new-reference-modal/new.reference.modal.component';
+
 @Component({
   selector: 'app-company-check',
   templateUrl: './company.check.component.html',
@@ -18,9 +19,9 @@ export class CompanyCheckComponent {
 
   ];
 
-  @ViewChild(ViewReferenceModalComponent) ViewReferenceModalComponent: any ;
+  @ViewChild(NewReferenceModalComponent) NewReferenceModalComponent: any ;
   openPopup() {
-    this.ViewReferenceModalComponent.openPopup();
+    this.NewReferenceModalComponent.openPopup();
   }
   constructor(){
     localStorage.setItem('showLogin','false');

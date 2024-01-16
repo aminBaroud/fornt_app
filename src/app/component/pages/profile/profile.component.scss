@@ -7,13 +7,20 @@ body {
   width: 100%;
   float: left;
   position: relative;
-  top: -200px;
+  top: 150px;
   left: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 1230px;
   z-index: 10;
+  .title{
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    text-align: center;
+    font-family: 'CircularStd';
+    color: #1F1F1F;
+  }
 
 }
 .topLeft{
@@ -47,6 +54,7 @@ img{
   position: relative;
   width: 90%;
   display: flex;
+  align-items: start;
   flex-direction: column;
   justify-content: space-evenly;
   .part1{
@@ -164,15 +172,15 @@ img{
       margin-bottom: 30px;
     }
     .sub-content{
-      width: 901px;
+      width: 100%;
       display: flex;
       margin-left: auto;
       margin-right: auto;
       flex-direction: row;
-      align-items: center;
+      align-items: left;
       justify-content: space-evenly;
       .left{
-        width: 450px;
+        width: 50%;
         text-align: left;
         font-size: 16px;
         font-weight: 400;
@@ -181,7 +189,7 @@ img{
         line-height: 18.75px;
       }
       .right{
-        width: 450px;
+        width: 50%;
         text-align: left;
         font-size: 16px;
         font-weight: 400;
@@ -191,6 +199,196 @@ img{
       }
     }
   }
+}
+.sub-contents{
+  position: relative;
+  top: 40px;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:left;
+.title{
+  text-align: left;
+  font-size: 20px !important;
+  font-weight: 600  !important;;
+  font-family: 'CircularStd'  !important;;
+}
+.left{
+  width:213px;
+  .plan-free{
+    width: 213px;
+    height: 576px;
+    box-shadow: 0px 0px 32px  rgba(69, 102, 183, .14);
+    z-index: 5;
+    border-radius: 10px;
+    background: #F9FAFE;
+    .top-image{
+      height: 150px;
+      background: #F9FAFE;
+      .image{
+        background-image: url(../../../../assets/img/plan/free-green.png);
+        background-size: 100%;
+        background-repeat:no-repeat;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .text{
+      font-weight: 600;
+      top: -120px;
+      position: relative;
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      font-family: 'CircularStd';
+      line-height: 67px;
+      width: 100%;
+    }
+
+
+  }
+  .plan-free:hover{
+
+
+    .top-image{
+      width: 100%;
+      background: #F9FAFE;
+      .image{
+        background-image: url(../../../../assets/img/plan/free-green.png);
+        background-size: 100%;
+        background-repeat:no-repeat;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .text{
+      color: white;
+    }
+
+  }
+
+  [class^="plan-"]{
+
+    .content{
+      width: 100%;
+      float: left;
+      .sub{
+        padding-bottom: 20px;
+        height: 80px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background: #F9FAFE;
+        border-bottom: 1px solid #EAEDF7;
+        .title{
+          float: left;
+          text-align: center;
+          color: #819191;
+          font-size: 13px;
+          font-family: 'CircularStd';
+          line-height: 30px;
+          width: 100%;
+        }
+        .description{
+          height: 30px;
+          text-align: center;
+          color: #1F1F1F;
+          font-size: 16px;
+          font-family: 'CircularStd';
+          line-height: 30px;
+          width: 100%;
+        }
+        .description i{
+          color: #002E9D;
+        }
+
+      }
+      .sub-price{
+        .title{
+          height: 30px;
+          text-align: center;
+          color: #819191;
+          font-size: 16px;
+          font-family: 'CircularStd';
+          line-height: 30px;
+          width: 100%;
+        }
+        .description{
+          height: 30px;
+          text-align: center;
+          color: #1F1F1F;
+          font-size: 16px;
+          font-family: 'CircularStd';
+          line-height: 30px;
+          width: 100%;
+        }
+
+        .free-price{
+          height: 30px;
+          text-align: center;
+          color: #EE9B2B;
+          font-size: 20px;
+          font-family: 'CircularStd';
+          line-height: 30px;
+          text-transform: uppercase;
+          width: 100%;
+        }
+      }
+      .number{
+        font-family:Intro;
+        font-size: 80px;
+        font-weight: 400;
+        color: white;
+        float: right;
+        width: 89px;
+        height: 67px;
+        right: 20px;
+        top: -50px;
+        position: relative;
+        z-index: -5;
+      }
+      .select-button{
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 29px;
+        float: left;
+        button{
+          width: 200px;
+        }
+      }
+      .basic-price{
+        font-size: 20px;
+        font-family: 'CircularStd';
+        line-height: 30px;
+        color: #002E9D;
+      }
+    }
+    }
+
+}
+.center{
+  width:451px;
+  padding: 20px;
+  .inputs{
+    .w2{
+      width:165px;
+      padding-bottom: 20px;
+
+    }
+    .w5{
+      width:360px;
+      padding-bottom: 20px;
+    }
+
+  }
+}
+.right{
+  width:600px;
+  padding: 20px;
+}
 }
 
 .rightBG{
@@ -244,9 +442,33 @@ img{
 
 }
 
+.form-check-input:checked {
+  background-color: #66C346;
+  border-color: #66C346;
+}
+
 
 @media only screen and (max-width: 767px) {
 
+  .contents{
+    top:320px;
+    min-height: 2000px;
+  }
+  .inputs{
+    .part1{
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .w2{
+      width: 100% !important;
+    }
+    .w5{
+      width: 100% !important;
+    }
+  }
   .image-left{
     position: relative;
     top: 300px;
@@ -304,12 +526,78 @@ img{
           }
         }
         .right{
+          position: relative;
+          top: 20px;
           font-size: 13px;
           text-align: center;
           width: 100% ;
           a{
             top: 0px;
           }
+        }
+      }
+    }
+    .sub-contents{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .left{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+.plan-free{
+  width: 300px;
+.content{
+  width: 100% !important;
+}
+  .select-button{
+    width: 100% !important;
+    text-align: center;
+    top: 0px;
+  }
+}
+      }
+      .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 40px;
+        .inputs{
+          position: relative;
+          width: 80% !important;
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+        .w2{
+          width: 100% !important;
+        }
+      }
+      .right{
+        position: relative;
+        top: 70px;
+        width: 100%;
+        .displayed-table{
+          width: 100% !important;
+          position: relative;
+          font-size: 13px !important;
+
+          .table thead th {
+            font-size: 13px;
+          }
+          .table td {
+            font-size: 13px;
+            word-wrap: break-word;
+            word-break: break-all;
+            white-space: normal !important;
+            text-align: justify;
+          }
+
+
         }
       }
     }

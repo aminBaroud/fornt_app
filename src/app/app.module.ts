@@ -1,4 +1,6 @@
+import { provideHttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
@@ -42,8 +44,9 @@ import { SharedModule } from './component/shared/shared.module';
     NgbModule,
     SharedModule,
     CustomModalsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

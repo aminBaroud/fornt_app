@@ -1,27 +1,25 @@
-import { NotFoundComponent } from './component/pages/not-found/not-found.component'
+import { provideHttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './component/shared/header/header.component';
-import { ProfileComponent } from './component/pages/profile/profile.component';
-import { HomeComponent } from './component/pages/home/home.component';
-import { FooterComponent } from './component/shared/footer/footer.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { LoginComponent } from './component/auth/login/login.component';
-import { PayModalComponent } from './component/auth/chose-plan/pay_modal/pay.modal.component';
 import { ChosePlanComponent } from './component/auth/chose-plan/chose.plan.component';
+import { PayModalComponent } from './component/auth/chose-plan/pay_modal/pay.modal.component';
 import { PlanComponent } from './component/auth/chose-plan/plans/plan.component';
+import { SliderComponent } from './component/auth/chose-plan/slidershow/slider.component';
+import { LoginComponent } from './component/auth/login/login.component';
+import { CompanyCheckComponent } from './component/pages/company-check/company.check.component';
+import { HomeComponent } from './component/pages/home/home.component';
+import { CustomModalsModule } from './component/pages/models/custom.modals.module';
+import { NotFoundComponent } from './component/pages/not-found/not-found.component';
+import { ProfileComponent } from './component/pages/profile/profile.component';
+import { StartComponent } from './component/pages/reference/start/start.component';
 import { ReferenceModalComponent } from './component/pages/reference/welcome/modal/reference.modal.component';
 import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/reference.welcome.component';
-import { SliderComponent } from './component/auth/chose-plan/slidershow/slider.component';
 import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
-import { SquareComponent } from './component/pages/reference/start/square/square.component';
-import { StartComponent } from './component/pages/reference/start/start.component';
-import { StarComponent } from './component/pages/reference/start/star/star.component';
-import { CompanyCheckComponent } from './component/pages/company-check/company.check.component';
 import { SharedModule } from './component/shared/shared.module';
-import { CustomModalsModule } from './component/pages/modals/custom.modals.module';
 
 @NgModule({
   declarations: [
@@ -45,9 +43,10 @@ import { CustomModalsModule } from './component/pages/modals/custom.modals.modul
     AppRoutingModule,
     NgbModule,
     SharedModule,
-    CustomModalsModule
+    CustomModalsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [provideHttpClient()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

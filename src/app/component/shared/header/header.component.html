@@ -21,7 +21,7 @@
             <ul class="navbar-nav">
               @for (item of navigationItems; track $index) {
               <li class="nav-item">
-                <a class="nav-link {{item.selected}}" [routerLink]="item.href">{{ item.text }}</a>
+                <a class="nav-link {{item.selected}}" href="{{item.href}}">{{ item.text }}</a>
               </li>
               }
             </ul>

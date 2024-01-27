@@ -15,12 +15,12 @@ export class HeaderComponent {
   navbarOpen=false;
   navigationItems = [
     { text: "About us", href: "/aboutUs" , selected:"" },
-    { text: "Why Talent Check", href: "/whyTalentCheck", selected:"" },
-    { text: "How it works", href: "/howItWorks", selected:"" },
-    { text: "Trusted by", href: "/trustedBy" , selected:""},
-    { text: "Plans", href: "/plans" , selected:""},
-    { text: "Resources", href: "/resources", selected:"" },
-    { text: "Contact us", href: "/contactUs" , selected:""},
+    { text: "Why Talent Check", href: "/aboutUs#WhyTalent", selected:"" },
+    { text: "How it works", href: "/aboutUs#HowItWorks", selected:"" },
+    { text: "Trusted by", href: "/aboutUs#TrustedBy" , selected:""},
+    { text: "Plans", href: "/aboutUs#Plans" , selected:""},
+    { text: "Resources", href: "/aboutUs#Ressources", selected:"" },
+    { text: "Contact us", href: "/aboutUs#ContactUs" , selected:""},
   ];
 
   constructor(private router: Router){

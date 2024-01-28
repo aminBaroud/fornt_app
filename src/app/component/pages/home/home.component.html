@@ -21,10 +21,10 @@
   </div>
 </div>
 <div class="rightBG"></div>
-<div class="line"></div>
-<div class="main-talent">
+<div class="line" id="WhyTalent"></div>
+<div class="main-talent" >
 <div class="talent-ckech">
-  <div class="title">
+  <div class="title" >
     <span>Why Talent Checks</span>
     <div class="image-under"><img src="../../../../assets/img/landing/rec-under-why.png" /></div>
 
@@ -43,7 +43,7 @@
 </div>
 <div class="leftBG1"></div>
 
-<div class="works">
+<div class="works" id="HowItWorks">
   <div class="content">
     <div class="title">How it works?
       <div class="image">
@@ -55,7 +55,7 @@
   </div>
 </div>
 
-<div class="trusted">
+<div class="trusted" id="TrustedBy">
   <div class="content">
     <div class="title">Trusted by
       <div class="image">
@@ -98,7 +98,7 @@
 <div class="rightBG2"></div>
 <div class="leftBG2"></div>
 
-<div class="plans">
+<div class="plans" id="Plans">
   <div class="content">
     <div class="title">Plans
       <div class="image">
@@ -109,7 +109,7 @@
   </div>
 </div>
 
-<div class="ressources">
+<div class="ressources" id="Ressources">
   <div class="content">
     <div class="title">Resources
       <div class="image">
@@ -165,7 +165,7 @@
     </div>
 </div>
 </div>
-<div class="contact-us">
+<div class="contact-us" id="ContactUs">
   <div class="content">
     <div class="title">Contact us
       <div class="image">
@@ -190,5 +190,5 @@
 <div class="leftBG3"></div>
 <div class="rightBG3"></div>
 <div class="rightBG4"></div>
-<div class="upButton"></div>
+<div class="upButton" [hidden]="!GoTopBtn" (click)="goUp()"></div>
 </div>

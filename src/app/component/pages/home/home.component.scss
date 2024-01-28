@@ -602,15 +602,19 @@ background-size: 100%;
   background-size: 100%;
 }
 .upButton{
-  position: absolute;
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
   width: 42px;
   height: 99px;
-  top: 4462px;
+  top: 80%;
   right: 240px;
   background-image: url("../../../../assets/img/landing/Up.png");
   background-repeat: no-repeat;
   background-size: 100%;
+
 }
+
 
 .mob-tab{
   display: none !important;

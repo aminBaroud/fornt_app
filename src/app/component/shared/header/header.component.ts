@@ -35,8 +35,7 @@ export class HeaderComponent {
         else{
           item.selected="";
         }
-      })
-      console.log('Current route' , this.currentUrl);
+      });
 
     }
   })

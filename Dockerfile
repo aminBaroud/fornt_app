@@ -1,11 +1,17 @@
 FROM node:18-alpine AS build
 
-WORKDIR /app
+RUN apk add curl
 
-COPY . .
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
 RUN npm install
-RUN npm run build
+
+COPY . ./
+
+RUN npm run build:prod
 # Serve Application using Nginx Server
 FROM nginx:alpine
-COPY --from=build /app/dist/ /usr/share/nginx/html
-EXPOSE 80
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /usr/src/app/dist/app /usr/share/nginx/html

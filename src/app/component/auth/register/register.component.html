@@ -12,7 +12,7 @@
       <img src="../../../../assets/img/register/ManLeft.png" width="328" />
     </div>
   <div class="register-div">
-    <div class="top-button"><button class="btn btn-custom-danger form-control">LOG IN</button>
+    <div class="top-button"><a routerLink="/auth/login" class="btn btn-custom-danger form-control">LOG IN</a>
       <div class="cover"></div>
       </div>
         <div class="register-fields">
@@ -28,7 +28,7 @@
             <div class="read"><input type="checkbox" name="checked" id="checked" /> Read and accept <a  href="#">Terms and conditions</a></div>
 
             <div class="submit" (click)="submit()"><button class="btn btn-custom-danger form-control">SIGN UP</button></div>
-            <div class="login"> Already have an account? <a href="#">Log in!</a></div>
+            <div class="login"> Already have an account? <a href="/auth/login">Log in!</a></div>
         </div>
         </div>
     </div>

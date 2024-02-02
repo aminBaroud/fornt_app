@@ -15,12 +15,12 @@ import { ResourcesComponent } from './component/pages/resources/resources.compon
 import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent, pathMatch: 'full' },
-  { path: 'signup', component: RegisterComponent, pathMatch: 'full' },
+  { path: 'auth/login', component: LoginComponent, pathMatch: 'full' },
+  { path: 'auth/signup', component: RegisterComponent, pathMatch: 'full' },
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'register', component: RegisterComponent, pathMatch: 'full' },
+  { path: 'auth/register', component: RegisterComponent, pathMatch: 'full' },
   {
-    path: 'forget-password',
+    path: 'auth/forget-password',
     component: ForgetPasswordComponent,
     pathMatch: 'full',
   },

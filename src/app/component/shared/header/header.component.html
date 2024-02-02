@@ -1,21 +1,23 @@
 <section>
 
 
-<div class="talent-header">
-  <nav class="px-0 navbarFixedTop ">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <div class="talent-header">
+    <nav class="px-0 navbarFixedTop ">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="logo">
-          <a href="/">
-            <div class="logo-image"></div>
-          </a>
-        </div>
+          <div class="logo">
+            <a href="/">
+              <div class="logo-image"></div>
+            </a>
+          </div>
 
-        <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="navbarSupportedContent">
 
 
             <ul class="navbar-nav">
@@ -26,19 +28,21 @@
               }
             </ul>
 
-      </div>
-      </nav>
-      <div [hidden]="isVisible" class="sign-up mob-hide">
-        <button class="btn btn-custom-danger">SIGN UP</button>
-      </div>
+          </div>
+        </nav>
+        <div [hidden]="isVisible" class="sign-up mob-hide">
+          <button class="btn btn-custom-danger">SIGN UP</button>
+        </div>
 
-      <div  class="TopButtons mob-hide">
-        <div [hidden]="isConnected">
-          <div class="signin"><button class="btn btn-custom-danger form-control" routerLink="auth/signup">SIGN IN</button></div>
-          <div class="login"><button class="btn btn-custom-cancel form-control" routerLink="auth/login">LOG IN</button></div>
+        <div class="TopButtons mob-hide">
+          <div [hidden]="isConnected">
+            <div class="signin"><button class="btn btn-custom-danger form-control" routerLink="auth/signup">SIGN
+                IN</button></div>
+            <div class="login"><button class="btn btn-custom-cancel form-control" routerLink="auth/login">LOG
+                IN</button></div>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 </section>

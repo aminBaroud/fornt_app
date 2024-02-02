@@ -1,31 +1,35 @@
-p{
+p {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: row;
-  justify-content: start;
-  span:first-child{
+  justify-content: flex-start;
+
+  span:first-child {
     margin-left: 50px;
   }
-  span{
+
+  span {
     margin-left: 5px;
   }
 }
 
-.star{
+.star {
   display: block;
   background-image: url(../../../../../../assets/img/reference/start/star-empty.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
 }
-.star:hover{
+
+.star:hover {
   display: block;
   background-image: url(../../../../../../assets/img/reference/start/star.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
 }
-.selected{
+
+.selected {
   display: block;
   background-image: url(../../../../../../assets/img/reference/start/star.svg);
   background-repeat: no-repeat;

@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 955739729969.dkr.ecr.eu-central-1.amazonaws.com
+  build:
+    commands:
+      - docker build -t talent_checks_frontend_new .
+      - docker tag talent_checks_frontend_new:latest 955739729969.dkr.ecr.eu-central-1.amazonaws.com/talent_checks_frontend_new:latest
+  post_build:
+    commands:
+      - docker push 955739729969.dkr.ecr.eu-central-1.amazonaws.com/talent_checks_frontend_new:latest
+      - printf '[{"name":"talent_checks_frontend_new","imageUri":"955739729969.dkr.ecr.eu-central-1.amazonaws.com/talent_checks_frontend_new:latest"}]' > imagedefinitions.json
+artifacts:
+  files:
+    - '**/*'

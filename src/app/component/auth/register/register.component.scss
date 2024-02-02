@@ -1,77 +1,85 @@
 @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
-.register-section{
+.register-section {
   min-height: 1000px;
 }
-.TopMask{
-  right:0px;
+
+.TopMask {
+  right: 0px;
   position: absolute;
   z-index: 2;
   top: 0px;
   width: 700px;
 }
 
-.mains{
+.mains {
   position: relative;
   top: 120px;
   width: 100%;
   height: 100%;
 }
-.register-div{
-width: 470px;
-height: 749px;
-box-shadow: 0px 0px 32px  rgba(69, 102, 183, .14);
-z-index: 5;
-background: white;
-border-radius: 20px;
+
+.register-div {
+  width: 470px;
+  height: 749px;
+  box-shadow: 0px 0px 32px rgba(69, 102, 183, .14);
+  z-index: 5;
+  background: white;
+  border-radius: 20px;
 }
-.register{
+
+.register {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.ManLeft{
-  width:470px;
+
+.ManLeft {
+  width: 470px;
   z-index: 4;
-  img{
+
+  img {
     left: -85px;
     position: relative;
     width: 470px;
   }
 }
 
-.ManRight{
-width:470px;
-z-index: 4;
-padding-right: -85px;
-img{
-  position: relative;
-  right: -94px;
-  float: right;
-  width: 328px;
+.ManRight {
+  width: 470px;
+  z-index: 4;
+  padding-right: -85px;
+
+  img {
+    position: relative;
+    right: -94px;
+    float: right;
+    width: 328px;
+  }
 }
-}
-.register-fields{
+
+.register-fields {
   width: 470px;
 }
 
-.register-inputs{
+.register-inputs {
   position: relative;
   top: 70px;
   left: 62px;
   width: 350px;
   height: 100%;
-  .title{
+
+  .title {
     text-align: center;
     color: #1F1F1F;
     font-size: 25px;
     font-family: 'CircularStd';
     line-height: 30px;
-    text-transform:uppercase;
+    text-transform: uppercase;
   }
 
-  .register-text{
+  .register-text {
     text-align: center;
     color: #809090;
     position: relative;
@@ -80,139 +88,154 @@ img{
     font-family: 'CircularStd';
     line-height: 16px;
   }
-  .firstname{
+
+  .firstname {
     position: relative;
     float: left;
     top: 60px;
     font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+    font-family: 'CircularStd', 'FontAwesome';
     line-height: 16px;
     width: 165px;
   }
-  .lastname{
+
+  .lastname {
     position: relative;
     float: left;
     left: 19px;
     width: 165px;
     top: 60px;
     font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+    font-family: 'CircularStd', 'FontAwesome';
     line-height: 16px;
   }
-  .email{
+
+  .email {
     position: relative;
     float: left;
     top: 80px;
     font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+    font-family: 'CircularStd', 'FontAwesome';
     line-height: 16px;
     width: 100%;
   }
-  .phone{
+
+  .phone {
     position: relative;
     float: left;
     top: 100px;
     font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+    font-family: 'CircularStd', 'FontAwesome';
     line-height: 16px;
     width: 100%;
   }
-  .password{
+
+  .password {
     position: relative;
     top: 120px;
     font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+    font-family: 'CircularStd', 'FontAwesome';
     line-height: 16px;
     float: left;
     width: 165px;
   }
-  .confirme{
+
+  .confirme {
     position: relative;
     top: 120px;
     font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+    font-family: 'CircularStd', 'FontAwesome';
     line-height: 16px;
     float: left;
     left: 19px;
     width: 165px;
   }
-  .read{
+
+  .read {
     position: relative;
     top: 150px;
     font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+    font-family: 'CircularStd', 'FontAwesome';
     line-height: 16px;
     float: left;
   }
-  .read a{
+
+  .read a {
     color: #66C346;
   }
-  .submit{
+
+  .submit {
     position: relative;
     top: 170px;
     font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+    font-family: 'CircularStd', 'FontAwesome';
     line-height: 16px;
     float: left;
     width: 100%;
   }
 
-  .login{
+  .login {
     position: relative;
     text-align: center;
     top: 240px;
     font-size: 14px;
-    font-family:  'CircularStd','FontAwesome';
+    font-family: 'CircularStd', 'FontAwesome';
     line-height: 16px;
     float: left;
     width: 100%;
   }
-  .login a{
+
+  .login a {
     color: #66C346;
   }
 
 }
-.ButtomRight{
+
+.ButtomRight {
   position: relative;
   bottom: -83px;
   left: 0px;
-  img{
+
+  img {
     width: 470px;
   }
 }
 
-.btn-custom-danger{
-  background:#CA0010;
+.btn-custom-danger {
+  background: #CA0010;
   color: white;
 }
-.btn-custom-danger:hover{
-  background:rgb(202, 0, 16, .5);
+
+.btn-custom-danger:hover {
+  background: rgb(202, 0, 16, .5);
   color: whitesmoke;
 }
-.top-button{
+
+.top-button {
   display: none;
 }
+
 @media only screen and (max-width: 767px) {
 
-  .masks{
-    img{
-      width:233px ;
+  .masks {
+    img {
+      width: 233px;
     }
   }
 
-  .register-div{
+  .register-div {
     width: 90%;
     height: 710px;
-    box-shadow: 0px 0px 32px  rgba(69, 102, 183, .14);
+    box-shadow: 0px 0px 32px rgba(69, 102, 183, .14);
     z-index: 5;
     background: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
 
-    .top-button{
+    .top-button {
       display: block;
       width: 50%;
       position: relative;
@@ -220,11 +243,12 @@ img{
       float: right;
       top: -38px;
       background: #CA0010;
-      border-radius:5px;
+      border-radius: 5px;
       z-index: -1;
       height: 50px;
     }
-    .cover{
+
+    .cover {
       width: 100%;
       height: 20px;
       float: right;
@@ -232,7 +256,7 @@ img{
       background: white;
     }
 
-    .register-fields{
+    .register-fields {
       width: 100%;
       position: relative;
       left: 0px;
@@ -240,44 +264,51 @@ img{
       height: 100%;
     }
 
-    .register-inputs{
+    .register-inputs {
       min-width: 293px;
       position: relative;
       top: 70px;
-      left:0px;
+      left: 0px;
       width: 90%;
       height: 100%;
       padding-left: 5%;
       padding-right: 5%;
-      .title{
+
+      .title {
         font-size: 18px;
         font-family: 'CircularStd';
         line-height: 22.77px;
-        text-transform:uppercase;
+        text-transform: uppercase;
       }
 
-      .firstname{
+      .firstname {
         width: 46%;
       }
-      .lastname{
+
+      .lastname {
         width: 46%;
       }
-      .email{
+
+      .email {
         width: 100%;
       }
-      .phone{
+
+      .phone {
         width: 100%;
       }
-      .password{
+
+      .password {
         width: 46%;
       }
-      .confirme{
+
+      .confirme {
         width: 46%;
       }
 
 
     }
-    .forget{
+
+    .forget {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -286,53 +317,53 @@ img{
     }
   }
 
-  .ManLeft{
-    width:200px;
+  .ManLeft {
+    width: 200px;
     z-index: 4;
     top: 60%;
     position: relative;
-    img{
+
+    img {
       left: -157px;
       position: relative;
       top: 448px;
       width: 189px;
     }
   }
-  .ManRight{
-  width:180px;
-  z-index: 4;
-  padding-right: 58px;
-  position: relative;
-  top: -220px;
-  img{
+
+  .ManRight {
+    width: 180px;
+    z-index: 4;
+    padding-right: 58px;
     position: relative;
-    left: 106px;
-    top: -137px;
-    width: 141px;
-    margin-left: 20px
-  }
+    top: -220px;
+
+    img {
+      position: relative;
+      left: 106px;
+      top: -137px;
+      width: 141px;
+      margin-left: 20px
+    }
   }
 
-  .ButtomRight{
+  .ButtomRight {
     position: relative;
-    bottom:-297px;
+    bottom: -297px;
     left: 0px;
     z-index: -1;
-    img{
+
+    img {
       width: 223px;
     }
   }
 
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
-}
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {}
 
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-}
+@media only screen and (max-width: 767px) {}
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {}

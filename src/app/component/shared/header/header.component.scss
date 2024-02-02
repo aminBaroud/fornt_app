@@ -1,9 +1,10 @@
-.TopButtons{
+.TopButtons {
   position: absolute;
   right: 80px;
   top: 45px;
   z-index: 2000;
-  .login{
+
+  .login {
     position: relative;
     float: right;
     width: 113px;
@@ -11,7 +12,7 @@
     left: -40px;
   }
 
-  .signin{
+  .signin {
     position: relative;
     float: right;
     width: 113px;
@@ -19,54 +20,62 @@
   }
 }
 
-.btn-custom-cancel{
+.btn-custom-cancel {
   font-size: 12px;
   font-family: 'CircularStd';
   line-height: 14px;
-  background:rgb(244, 246, 253);
+  background: rgb(244, 246, 253);
   color: #1F1F1F;
   width: 100%;
   text-transform: uppercase;
   height: 45px;
 }
-.btn-custom-cancel:hover{
-  background:rgb(244, 246, 253, .5);
+
+.btn-custom-cancel:hover {
+  background: rgb(244, 246, 253, .5);
   color: gray;
 }
+
 .navbar-collapse {
   align-items: center;
   justify-content: center;
 }
-.logo{
+
+.logo {
   position: relative;
   top: 35px;
 }
-.logo-image{
+
+.logo-image {
   width: 180px;
   height: 120px;
   background-image: url(../../../../assets/logo.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 .navbar-nav {
-  flex-direction:row;
+  flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-.btn-custom-danger{
-  background:#CA0010;
+
+.btn-custom-danger {
+  background: #CA0010;
   color: white;
 }
-.btn-custom-danger:hover{
-  background:rgb(202, 0, 16, .5);
+
+.btn-custom-danger:hover {
+  background: rgb(202, 0, 16, .5);
   color: whitesmoke;
 }
-.sign-up{
-float: right;
-position: relative;
-top: -55px;
+
+.sign-up {
+  float: right;
+  position: relative;
+  top: -55px;
 }
 
 .navbar-nav li.nav-item.active a:after {
@@ -76,19 +85,23 @@ top: -55px;
   background: #66c346;
   display: block;
 }
-li a{
+
+li a {
   text-decoration: none;
-  color:#809090;
-  }
-li a:hover{
-    text-decoration: none;
-    color:black;
+  color: #809090;
 }
-.nav-item{
+
+li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item {
   display: inline;
   padding-left: 20px;
   padding-right: 20px;
-  .selected{
+
+  .selected {
     background-image: url("../../../../assets/img/menu/selected.png");
     background-size: 100% 9%;
     background-repeat: no-repeat;
@@ -104,8 +117,8 @@ li a:hover{
   text-transform: uppercase;
 }
 
-.navbar-light .navbar-nav .show>.nav-link,
-.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   color: #1f1f1f;
@@ -166,32 +179,36 @@ nav.navbar {
 @media only screen and (min-width: 768px) {
 
   .mob-icon {
-      display: none;
+    display: none;
   }
 
-  .navbarFixedTop{
-    top:40px;
+  .navbarFixedTop {
+    top: 40px;
   }
 
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .logo{
-  position: relative;
-  top: 35px;
-  height: 117px;
+  .logo {
+    position: relative;
+    top: 35px;
+    height: 117px;
   }
-  .TopButtons{
-    top:-10px;
+
+  .TopButtons {
+    top: -10px;
   }
-  .navbarFixedTop{
-    top:40px;
+
+  .navbarFixedTop {
+    top: 40px;
   }
-  .nav-item{
+
+  .nav-item {
     display: inline;
     padding-left: 5px;
     padding-right: 5px;
-    .selected{
+
+    .selected {
       background-image: url("../../../../assets/img/menu/selected.png");
       background-size: 100% 9%;
       background-repeat: no-repeat;
@@ -200,43 +217,47 @@ nav.navbar {
   }
 
   .talent-header .navbar-light .navbar-nav .nav-link {
-      font-size: 13px;
-      padding-right: 8px;
-      padding-left: 8px;
+    font-size: 13px;
+    padding-right: 8px;
+    padding-left: 8px;
   }
 
   .talent-header .talent-btn,
   .talent-header .talent-btn {
-      padding: 8px 16px;
+    padding: 8px 16px;
   }
 
   .talent-header .navbar-brand {
-      margin-right: 0;
+    margin-right: 0;
   }
 
   .talent-header .navbar-brand img {
-      width: 150px;
+    width: 150px;
   }
 }
 
 
-@media only screen and (min-width: 1199px){
-  .logo{
-  position: relative;
-  top: 35px;
-  height: 117px;
+@media only screen and (min-width: 1199px) {
+  .logo {
+    position: relative;
+    top: 35px;
+    height: 117px;
   }
-  .TopButtons{
-    top:50px;
+
+  .TopButtons {
+    top: 50px;
   }
-  .navbarFixedTop{
-    top:40px;
+
+  .navbarFixedTop {
+    top: 40px;
   }
-  .nav-item{
+
+  .nav-item {
     display: inline;
     padding-left: 5px;
     padding-right: 5px;
-    .selected{
+
+    .selected {
       background-image: url("../../../../assets/img/menu/selected.png");
       background-size: 100% 9%;
       background-repeat: no-repeat;
@@ -245,22 +266,26 @@ nav.navbar {
   }
 
   .talent-header .navbar-light .navbar-nav .nav-link {
-      font-size: 13px;
-      padding-right: 8px;
-      padding-left: 8px;
+    font-size: 13px;
+    padding-right: 8px;
+    padding-left: 8px;
   }
 
   .talent-header .talent-btn,
   .talent-header .talent-btn {
-      padding: 8px 16px;
+    padding: 8px 16px;
   }
 
   .talent-header .navbar-brand {
-      margin-right: 0;
+    margin-right: 0;
   }
 
   .talent-header .navbar-brand img {
-      width: 150px;
+    width: 150px;
+  }
+
+  .sign-up {
+    display: none;
   }
   .sign-up{
 display: none;
@@ -269,46 +294,48 @@ display: none;
 
 @media only screen and (max-width: 991px) {
   .navbar-collapse {
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background: #f9fafe;
-      z-index: 22;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #f9fafe;
+    z-index: 22;
   }
 
   .navbar-collapse .navbar-nav {
-      padding: 10px;
-      max-width: 750px;
-      margin: 0 auto;
+    padding: 10px;
+    max-width: 750px;
+    margin: 0 auto;
   }
 
   .navbar-toggler {
-      padding: 0px;
-      background-color: #F4F6FD;
-      border: none;
+    padding: 0px;
+    background-color: #F4F6FD;
+    border: none;
   }
 
   .navbar-brand {
-      padding: 0;
-      margin: 0;
+    padding: 0;
+    margin: 0;
   }
 
   nav.navbar {
-      transition: all 0.3s ease;
-      padding-left: 15px !important;
-      padding-right: 15px !important;
+    transition: all 0.3s ease;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 
   .navbar-brand img {
-      width: 160px;
+    width: 160px;
   }
-  .logo{
+
+  .logo {
     position: relative;
     width: 100%;
     text-align: center;
   }
-  .logo-image{
+
+  .logo-image {
     top: -40px;
     position: relative;
     margin-left: auto;
@@ -318,37 +345,40 @@ display: none;
   }
 
   .mob-icon {
-      background: #fff;
-      border-radius: 6px;
-      width: 35px;
-      height: 35px;
-      line-height: 32px;
-      text-align: center;
+    background: #fff;
+    border-radius: 6px;
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
   }
-  .mob-hide{
-display: none;
+
+  .mob-hide {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 767px) {
 
   .navbar-brand img {
-      width: 140px;
+    width: 140px;
   }
 
   .mob-hide {
-      display: none;
+    display: none;
   }
 
   .navbar-collapse .navbar-nav {
-      max-width: 570px;
+    max-width: 570px;
   }
-  .logo{
+
+  .logo {
     position: relative;
     width: 100%;
     text-align: center;
   }
-  .logo-image{
+
+  .logo-image {
     top: -40px;
     position: relative;
     margin-left: auto;
@@ -358,20 +388,23 @@ display: none;
   }
 
   .mob-icon {
-      background: #fff;
-      border-radius: 6px;
-      width: 35px;
-      height: 35px;
-      line-height: 32px;
-      text-align: center;
+    background: #fff;
+    border-radius: 6px;
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
   }
-  .mob-hide{
+
+  .mob-hide {
     display: none;
   }
-  .nav-item{
+
+  .nav-item {
     padding-left: 5px;
     padding-right: 5px;
-    .selected{
+
+    .selected {
       background-image: url("../../../../assets/img/menu/selected.png");
       background-size: 100% 9%;
       background-repeat: no-repeat;
@@ -380,13 +413,14 @@ display: none;
   }
 
   .navbar-nav {
-    flex-direction:column;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #809090;
   }
-  .navbar-collapse{
+
+  .navbar-collapse {
     top: 83px;
   }
 }

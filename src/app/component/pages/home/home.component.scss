@@ -49,7 +49,7 @@
     position: relative;
     width: 760px !important;
     font-size: 45px;
-    font-family: 'CircularStd';
+    font-family: 'Conv_Circular Std Bold';
     color: #1F1F1F;
     width: 100%;
     text-transform: uppercase;
@@ -269,7 +269,7 @@
         position: relative;
         float: left;
         width: 0px;
-        left: 678px;
+        left: 509px;
         top: 10px;
         z-index: -1;
       }
@@ -608,7 +608,7 @@ background-size: 100%;
   width: 42px;
   height: 99px;
   top: 80%;
-  right: 240px;
+  right: 100px;
   background-image: url("../../../../assets/img/landing/Up.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -626,6 +626,22 @@ background-size: 100%;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 767px) {
 
+  ::ng-deep .carousel-control-next{
+   display: none;
+  }
+  ::ng-deep .carousel-control-prev{
+    display: none;
+  }
+  ::ng-deep .carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #002E9D;
+  }
+  ::ng-deep .carousel-indicators [data-bs-target] {
+    border-radius: 20px !important;
+    border-top: 20px;
+    border-bottom: 20px;
+    width: 15px;
+    height: 15px;
+   }
   .home-div{
     margin-bottom: 203px;
   }

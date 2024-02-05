@@ -313,17 +313,28 @@ body {
 @media only screen and (max-width: 767px) {
 
 
-  ::ng-deep .carousel-control-next {
-    right: -50px;
-  }
-
-  ::ng-deep .carousel-control-prev {
-    left: -50px !important;
-  }
+  ::ng-deep .carousel-control-next{
+    display: none;
+   }
+   ::ng-deep .carousel-control-prev{
+     display: none;
+   }
 
   ::ng-deep .carousel-indicators {
     bottom: -50px;
   }
+  ::ng-deep .carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #002E9D;
+  }
+
+  ::ng-deep .carousel-indicators [data-bs-target] {
+    border-radius: 20px !important;
+    border-top: 20px;
+    border-bottom: 20px;
+    width: 15px;
+    height: 15px;
+   }
+
 
   .desktop-tab {
     display: none !important;

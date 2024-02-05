@@ -266,6 +266,7 @@
       color: #819191;
       font-size: 13px;
       font-family: 'CircularStd';
+      font-weight: 100;
       line-height: 30px;
       width: 100%;
     }
@@ -284,6 +285,12 @@
 
   }
   .sub-price{
+    .title{
+      color: #819191;
+      font-size: 13px;
+      font-weight: 100;
+      font-family: 'CircularStd';
+    }
     .description{
       height: 30px;
       text-align: center;

@@ -1,4 +1,4 @@
-.content{
+.content {
   width: 100%;
   float: left;
   position: relative;
@@ -6,25 +6,29 @@
   left: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   min-height: 800px;
 }
-.topLeft{
+
+.topLeft {
   position: absolute;
   right: 0px;
   top: 0px;
 
 }
-.welcome-text{
+
+.welcome-text {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   width: 1278px !important;
   height: 150px;
   top: 260px;
-  .title{
+
+  .title {
     position: relative;
-    width:100% !important;;
+    width: 100% !important;
+    ;
     font-size: 45px;
     font-family: 'CircularStd';
     color: #1F1F1F;
@@ -32,9 +36,11 @@
     font-weight: 600;
 
   }
-  .text{
+
+  .text {
     position: relative;
-    width:100% !important;;
+    width: 100% !important;
+    ;
     top: 20px;
     font-size: 18px;
     font-family: 'CircularStd';
@@ -45,14 +51,15 @@
 
 }
 
-.waiting{
+.waiting {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   width: 1278px !important;
   height: 150px;
   top: 400px;
-  .title{
+
+  .title {
     bottom: 20px;
     position: relative;
     width: 100%;
@@ -62,13 +69,15 @@
     line-height: 20px;
     color: #1F1F1F;
   }
-  .displayed-table{
+
+  .displayed-table {
     margin-left: auto;
     margin-right: auto;
     position: relative;
     width: 1278px !important;
     height: 150px;
-    .display-buttons{
+
+    .display-buttons {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -77,7 +86,7 @@
 
 }
 
-.rightBG{
+.rightBG {
   position: absolute;
   top: 199px;
   left: 0px;
@@ -88,7 +97,8 @@
   background-repeat: no-repeat;
   z-index: -1;
 }
-.bottomRight{
+
+.bottomRight {
   position: absolute;
   bottom: -199px;
   left: 0px;
@@ -99,42 +109,48 @@
   background-repeat: no-repeat;
 }
 
-.btn-custom-danger{
+.btn-custom-danger {
   font-size: 12px;
   font-family: 'CircularStd';
   line-height: 14px;
-  background:#CA0010;
+  background: #CA0010;
   color: white;
   text-transform: uppercase;
   height: 45px;
   width: 125px;
 }
-.btn-custom-danger:hover{
-  background:rgb(202, 0, 16, .5);
+
+.btn-custom-danger:hover {
+  background: rgb(202, 0, 16, .5);
   color: whitesmoke;
 }
-.btn-custom-cancel{
+
+.btn-custom-cancel {
   font-size: 12px;
   font-family: 'CircularStd';
   line-height: 14px;
-  background:rgb(244, 246, 253);
+  background: rgb(244, 246, 253);
   color: #1F1F1F;
   text-transform: uppercase;
   height: 45px;
   width: 125px;
 }
-.btn-custom-cancel:hover{
-  background:rgb(244, 246, 253, .5);
+
+.btn-custom-cancel:hover {
+  background: rgb(244, 246, 253, .5);
 
 }
 
 @media only screen and (max-width: 767px) {
-  .topLeft{
-    img{
-      width:233px;
-    };
+  .topLeft {
+    img {
+      width: 233px;
+    }
+
+    ;
   }
-  .content{
+
+  .content {
     width: 100%;
 
     float: left;
@@ -143,40 +159,46 @@
     left: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     min-height: 100vh;
-    .welcome-text{
+
+    .welcome-text {
       width: 70% !important;
       margin-left: auto;
       margin-right: auto;
       position: relative;
-      .title{
+
+      .title {
         text-align: center;
         font-size: 20px;
         font-weight: 700;
         line-height: 29px;
         width: 100% !important;
       }
-      .text{
+
+      .text {
         width: 100%;
         text-align: left;
-        font-size:13px ;
+        font-size: 13px;
         font-weight: 400;
 
       }
     }
-    .waiting{
+
+    .waiting {
       top: 500px;
       width: 100% !important;
       height: 100%;
-      .title{
+
+      .title {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         position: relative;
         text-align: center;
       }
-      .displayed-table{
+
+      .displayed-table {
         font-size: 13px;
         width: 100% !important;
       }
@@ -184,13 +206,11 @@
   }
 
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
-@media only screen and (max-width: 991px) {
 
-}
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-}
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}

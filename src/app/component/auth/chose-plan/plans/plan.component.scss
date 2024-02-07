@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.plan-free {
+.plan {
   width: 297px;
   margin-left: 30px;
   height: 576px;
@@ -22,129 +22,6 @@
 
     .image {
       background-image: url(../../../../../assets/img/plan/free.png);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .text {
-    font-weight: 600;
-    top: -120px;
-    position: relative;
-    text-align: center;
-    color: #1F1F1F;
-    font-size: 25px;
-    font-family: 'CircularStd';
-    line-height: 67px;
-    width: 100%;
-  }
-
-
-}
-
-.plan-free:hover {
-
-
-  .top-image {
-    width: 100%;
-    background: #F9FAFE;
-
-    .image {
-      background-image: url(../../../../../assets/img/plan/free-green.png);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .text {
-    color: white;
-  }
-
-  .select-button {
-    display: block !important;
-  }
-
-}
-
-.plan-basic {
-  width: 297px;
-  margin-left: 30px;
-  height: 576px;
-  box-shadow: 0px 0px 32px rgba(69, 102, 183, .14);
-  z-index: 5;
-  border-radius: 10px;
-  background: #F9FAFE;
-
-  .top-image {
-    height: 150px;
-    background: #F9FAFE;
-
-    .image {
-      background-image: url(../../../../../assets/img/plan/basic.png);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .text {
-    font-weight: 600;
-    top: -120px;
-    position: relative;
-    text-align: center;
-    color: #1F1F1F;
-    font-size: 25px;
-    font-family: 'CircularStd';
-    line-height: 67px;
-    width: 100%;
-  }
-
-}
-
-.plan-basic:hover {
-  .top-image {
-    width: 100%;
-    background: #F9FAFE;
-
-    .image {
-      background-image: url(../../../../../assets/img/plan/basic-green.png);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .text {
-    color: white;
-  }
-
-  .select-button {
-    display: block !important;
-  }
-}
-
-
-.plan-premium {
-  width: 297px;
-  margin-left: 30px;
-  height: 576px;
-  box-shadow: 0px 0px 32px rgba(69, 102, 183, .14);
-  z-index: 5;
-  border-radius: 10px;
-  background: #F9FAFE;
-
-  .top-image {
-    height: 150px;
-    background: #F9FAFE;
-
-    .image {
-      background-image: url(../../../../../assets/img/plan/premium.png);
       background-size: 100%;
       background-repeat: no-repeat;
       width: 100%;
@@ -180,80 +57,15 @@
       opacity: .5;
     }
   }
-
 }
 
-.plan-premium:hover {
+.plan:hover {
   .top-image {
     width: 100%;
     background: #F9FAFE;
 
     .image {
-      background-image: url(../../../../../assets/img/plan/premium-green.png);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .text {
-    color: white;
-  }
-
-  .sub-text {
-    color: white;
-  }
-
-  .select-button {
-    display: block !important;
-  }
-}
-
-
-
-.plan-executive {
-  width: 297px;
-  margin-left: 30px;
-  height: 576px;
-  box-shadow: 0px 0px 32px rgba(69, 102, 183, .14);
-  z-index: 5;
-  border-radius: 10px;
-  background: #F9FAFE;
-
-  .top-image {
-    height: 150px;
-    background: #F9FAFE;
-
-    .image {
-      background-image: url(../../../../../assets/img/plan/executive.png);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .text {
-    font-weight: 600;
-    top: -120px;
-    position: relative;
-    text-align: center;
-    color: #1F1F1F;
-    font-size: 25px;
-    font-family: 'CircularStd';
-    line-height: 67px;
-    width: 100%;
-  }
-}
-
-.plan-executive:hover {
-  .top-image {
-    width: 100%;
-    background: #F9FAFE;
-
-    .image {
-      background-image: url(../../../../../assets/img/plan/executive-green.png);
+      background-image: url(../../../../../assets/img/plan/free-green.png);
       background-size: 100%;
       background-repeat: no-repeat;
       width: 100%;
@@ -270,10 +82,7 @@
   }
 }
 
-
-
-
-[class^="plan-"] {
+[class^="plan"] {
 
   .content {
     width: 100%;

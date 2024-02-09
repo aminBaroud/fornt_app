@@ -1,4 +1,4 @@
-import { provideHttpClient } from '@angular/common/http';
+import { HttpClientModule  , HTTP_INTERCEPTORS  } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,6 +20,11 @@ import { ReferenceModalComponent } from './component/pages/reference/welcome/mod
 import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/reference.welcome.component';
 import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
 import { SharedModule } from './component/shared/shared.module';
+
+// Interceptor
+import { InterceptorService } from './_interceptor/interceptor.service';
+
+
 
 @NgModule({
   declarations: [
@@ -45,8 +50,11 @@ import { SharedModule } from './component/shared/shared.module';
     SharedModule,
     CustomModalsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [provideHttpClient()],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

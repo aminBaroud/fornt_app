@@ -18,6 +18,12 @@ export class InterceptorService implements HttpInterceptor {
   ): Observable<HttpEvent<any>> {
     console.log("in intercpetor" , dev.apiUrl + req.url);
 
+  // don't add header for this endpoints
+
+    if(req.url.includes('login') || req.url.includes('register')){
+      return next.handle(req);
+    }
+
       const token:any =  localStorage.getItem("currentUser") && localStorage.getItem("currentUser")!=null ? localStorage.getItem("currentUser") :'';
       req = req.clone({
       headers: req.headers.set(

@@ -13,6 +13,7 @@ import { StartComponent } from './component/pages/reference/start/start.componen
 import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/reference.welcome.component';
 import { ResourcesComponent } from './component/pages/resources/resources.component';
 import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
+import { authGuard } from './_guard/auth.guard';
 
 const routes: Routes = [
   { path: 'auth/login', component: LoginComponent, pathMatch: 'full' },
@@ -25,7 +26,7 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   { path: 'home', component: HomeComponent, pathMatch: 'full' },
-  { path: 'profile', component: ProfileComponent, pathMatch: 'full' },
+  { path: 'profile', component: ProfileComponent, pathMatch: 'full' , canActivate:[authGuard] },
   { path: 'plans', component: ChosePlanComponent, pathMatch: 'full' },
   { path: 'aboutUs', component: HomeComponent, pathMatch: 'full' },
   {

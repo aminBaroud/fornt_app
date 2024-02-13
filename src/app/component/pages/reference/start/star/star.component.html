@@ -1,6 +1,6 @@
 
 <p>
 @for(item of number; track $index){
-  <span class="star {{item.selected}}" (click)="selected(item.id)"></span>
+  <span class="star {{item.selected}}" (mouseout)="mouseOut()" (mouseenter)="mouseOver(item.id)" (click)="selected(item.id)"></span>
 }
 </p>

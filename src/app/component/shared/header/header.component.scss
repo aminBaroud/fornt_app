@@ -46,6 +46,7 @@
 .logo {
   position: relative;
   top: 35px;
+  z-index: 1000;
 }
 
 .logo-image {
@@ -363,6 +364,7 @@ nav.navbar {
     position: relative;
     width: 100%;
     text-align: center;
+
   }
 
   .logo-image {
@@ -372,6 +374,7 @@ nav.navbar {
     margin-right: auto;
     width: 124px;
     height: 48px;
+
   }
 
   .mob-icon {

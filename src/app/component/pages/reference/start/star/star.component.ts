@@ -7,9 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class StarComponent {
   number:any[];
+  selected_stars:boolean =false;
+  selected_value:number = 0;
 constructor(){
   this.number=[];
-
 }
   @Input()
   numberStarts!: number;
@@ -40,16 +41,41 @@ ngOnInit() {
   }
 
 selected(item:any){
+  this.selected_stars = true;
+  this.selected_value = item;
 
-  for(let t=0;t<=item;t++){
     this.number.forEach((value)=>{
       if(value.id<=item){
         return value.selected="selected";
       }
       return value.selected="";
     });
-  }
+
   this.selectedValue.emit(item);
+}
+
+mouseOver(item:any){
+
+
+    this.number.forEach((value)=>{
+      if(value.id<=item){
+        return value.selected="selected";
+      }
+      return value.selected="";
+    });
+
+
+}
+
+mouseOut(){
+
+    this.number.forEach((value)=>{
+      if(value.id<=this.selected_value){
+        return value.selected="selected";
+      }
+      return value.selected="";
+    });
+
 }
 }
 

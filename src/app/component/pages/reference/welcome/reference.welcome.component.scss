@@ -1,4 +1,4 @@
-.content {
+.content-reference {
   width: 100%;
   float: left;
   position: relative;
@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: flex-start;
   min-height: 800px;
+  z-index: 1000;
 }
 
 .topLeft {

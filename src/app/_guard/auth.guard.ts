@@ -1,9 +1,13 @@
 import { inject } from '@angular/core';
-import { CanActivateFn , Router } from '@angular/router';
+import { CanActivateFn, Router } from '@angular/router';
 
 export const authGuard: CanActivateFn = (route, state) => {
-  const token:any =  localStorage.getItem("currentUser") && localStorage.getItem("currentUser")!=null ? localStorage.getItem("currentUser") :'';
-  console.log("token data :" ,token);
+  const token: any =
+    localStorage.getItem('access_token') &&
+    localStorage.getItem('access_token') != null
+      ? localStorage.getItem('access_token')
+      : '';
+  console.log('token data :', token);
 
   if (token != '') {
     return true;
@@ -11,5 +15,4 @@ export const authGuard: CanActivateFn = (route, state) => {
     inject(Router).navigate(['/auth/login']);
     return false;
   }
-
 };

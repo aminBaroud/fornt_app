@@ -11,8 +11,9 @@ import { NotFoundComponent } from './component/pages/not-found/not-found.compone
 import { ProfileComponent } from './component/pages/profile/profile.component';
 import { StartComponent } from './component/pages/reference/start/start.component';
 import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/reference.welcome.component';
-import { ResourcesComponent } from './component/pages/resources/resources.component';
+import { RessourcesComponent } from './component/pages/resources/ressources.component';
 import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
+import { authGuard } from './_guard/auth.guard';
 
 const routes: Routes = [
   { path: 'auth/login', component: LoginComponent, pathMatch: 'full' },
@@ -25,7 +26,7 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   { path: 'home', component: HomeComponent, pathMatch: 'full' },
-  { path: 'profile', component: ProfileComponent, pathMatch: 'full' },
+  { path: 'profile', component: ProfileComponent, pathMatch: 'full' , canActivate:[authGuard] },
   { path: 'plans', component: ChosePlanComponent, pathMatch: 'full' },
   { path: 'aboutUs', component: HomeComponent, pathMatch: 'full' },
   {
@@ -33,10 +34,10 @@ const routes: Routes = [
     component: ReferenceWelcomeComponent,
     pathMatch: 'full',
   },
-  { path: 'start', component: StartComponent, pathMatch: 'full' },
-  { path: 'resources', component: ResourcesComponent, pathMatch: 'full' },
-  { path: 'contact-us', component: ContactUsComponent, pathMatch: 'full' },
-  { path: 'talent-check', component: TalentCheckComponent, pathMatch: 'full' },
+  { path: 'start', component: StartComponent, pathMatch: 'full', canActivate:[authGuard] },
+  { path: 'ressources', component: RessourcesComponent, pathMatch: 'full' , canActivate:[authGuard] },
+  { path: 'contact-us', component: ContactUsComponent, pathMatch: 'full', canActivate:[authGuard] },
+  { path: 'talent-check', component: TalentCheckComponent, pathMatch: 'full'},
   {
     path: 'company-check',
     component: CompanyCheckComponent,

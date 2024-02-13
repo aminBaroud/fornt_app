@@ -12,10 +12,28 @@
         </div>
         <div class="main">
           @if(displayed_text!='add'){
-            <div class="sub-text">
-              Drag and drop
-              <br /> or
-            </div>
+
+
+            <ngx-file-drop class="sub-text" dropZoneLabel="Drag and drop files here" (onFileDrop)="dropped($event)"
+            (onFileOver)="fileOver($event)" (onFileLeave)="fileLeave($event)">
+
+
+
+            <ng-template class="submit" ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+              <div *ngIf="files.length==0" class="sub-text-other">
+                Drag and drop
+                <br /> or
+              </div>
+
+              <div *ngFor="let item of files; let i=index" class="sub-text-other">
+                <span>{{ item.relativePath }}</span><span class="remove-file" (click)="removeFile()"> X</span>
+              </div>
+              <button type="button" (click)="startRecording()" class="btn btn-custom-danger form-control">{{displayed_text}}</button>
+            </ng-template>
+            </ngx-file-drop>
+
+
+
           }
           @else {
             <div class="sub-text" style="top:0px;">
@@ -27,11 +45,13 @@
               </div>
             </div>
             </div>
+
+            <div class="sub-text-submit">
+
+              <button class="btn btn-custom-danger form-control">{{displayed_text}}</button></div>
+
+
           }
-
-
-
-          <div class="submit"><button class="btn btn-custom-danger form-control">{{displayed_text}}</button></div>
 
         </div>
       </div>

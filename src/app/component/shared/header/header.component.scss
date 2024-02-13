@@ -131,6 +131,7 @@ li a:hover {
 
 .talent-header {
   width: 100%;
+  height: 150px;
 }
 
 .talent-btn {
@@ -173,12 +174,12 @@ nav.navbar {
 
 .navbarFixedTop {
   right: 0;
-  left: 0;
+  left: 0 !important;
   z-index: 1030;
   top: 0;
   transition: all 0.3s ease;
-  position: relative;
-  z-index: 1000;
+  position: fixed;
+  background: #f9fafe;
 }
 
 .back {
@@ -197,7 +198,7 @@ nav.navbar {
   }
 
   .navbarFixedTop {
-    top: 40px;
+    top: 0px;
   }
 
 }
@@ -215,7 +216,7 @@ nav.navbar {
   }
 
   .navbarFixedTop {
-    top: 40px;
+    top: 0px;
   }
 
   .nav-item {
@@ -274,7 +275,7 @@ nav.navbar {
   }
 
   .navbarFixedTop {
-    top: 40px;
+    top: 0px;
   }
 
   .nav-item {

@@ -13,7 +13,7 @@ import { ConfirmSentModelComponent } from './sent-model/sent.model.component';
 import { ShareModelComponent } from './share-model/share.model.component';
 import { UpgradeModelComponent } from './upgrade-model/upgrade.model.component';
 import { ViewReferenceModelComponent } from './view-reference/view.reference.model.component';
-
+import { NgxFileDropModule } from 'ngx-file-drop';
 @NgModule({
   declarations: [
     ViewReferenceModelComponent,
@@ -29,7 +29,7 @@ import { ViewReferenceModelComponent } from './view-reference/view.reference.mod
     StarComponent,
     SquareComponent,
   ],
-  imports: [CommonModule, AppRoutingModule],
+  imports: [CommonModule, AppRoutingModule,NgxFileDropModule],
   exports: [
     StarComponent,
     SquareComponent,

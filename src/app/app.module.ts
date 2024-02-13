@@ -20,9 +20,9 @@ import { ReferenceModalComponent } from './component/pages/reference/welcome/mod
 import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/reference.welcome.component';
 import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
 import { SharedModule } from './component/shared/shared.module';
-
 // Interceptor
 import { InterceptorService } from './_interceptor/interceptor.service';
+
 
 
 
@@ -41,7 +41,7 @@ import { InterceptorService } from './_interceptor/interceptor.service';
     SliderComponent,
     TalentCheckComponent,
     StartComponent,
-    CompanyCheckComponent,
+    CompanyCheckComponent
   ],
   imports: [
     BrowserModule,

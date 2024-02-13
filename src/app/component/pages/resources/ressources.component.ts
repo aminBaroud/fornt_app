@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-resources',
-  templateUrl: './resources.component.html',
-  styleUrl: './resources.component.scss',
+  selector: 'app-ressources',
+  templateUrl: './ressources.component.html',
+  styleUrl: './ressources.component.scss',
 })
-export class ResourcesComponent {
+export class RessourcesComponent {
   constructor() {
     localStorage.setItem('showLogin', 'false');
   }

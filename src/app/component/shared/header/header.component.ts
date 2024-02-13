@@ -12,6 +12,7 @@ export class HeaderComponent {
   currentUrl: any;
   isConnected = false;
   navbarOpen = false;
+  token:any =  localStorage.getItem("currentUser") && localStorage.getItem("currentUser")!=null ? localStorage.getItem("currentUser") :'';
   navigationItems = [
     { text: 'About us', href: '/aboutUs', selected: '' },
     { text: 'Why Talent Check', href: '/aboutUs#WhyTalent', selected: '' },
@@ -22,7 +23,17 @@ export class HeaderComponent {
     { text: 'Contact us', href: '/aboutUs#ContactUs', selected: '' },
   ];
 
+
   constructor(private router: Router) {
+    if(this.token!=''){
+      this.navigationItems = [
+        { text: 'Profile', href: '/profile', selected: '' },
+        { text: 'Your talent checks', href: '/start', selected: '' },
+        { text: 'Ressources', href: '/ressources', selected: '' },
+        { text: 'Contact us', href: '/contact-us', selected: '' },
+      ];
+    }
+
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.currentUrl = event.url;

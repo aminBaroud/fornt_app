@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ressources',
-  templateUrl: './ressources.component.html',
-  styleUrl: './ressources.component.scss',
+  selector: 'app-resources',
+  templateUrl: './resources.component.html',
+  styleUrl: './resources.component.scss',
 })
 export class RessourcesComponent {
   constructor() {

@@ -4,6 +4,43 @@
   top: 45px;
   z-index: 2000;
 
+  .profile-menu{
+    width: 400px;
+    position: relative;
+    top: -20px;
+    left: 0px;
+    font-size: 15px;
+    font-family: 'CircularStd';
+    line-height: 15px;
+    font-weight: 700;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .profile-text{
+      width: 200px !important;
+      span{
+        font-size: 15px;
+        font-family: 'CircularStd';
+        line-height: 15px;
+        font-weight: 400;
+      }
+      p{
+        cursor: pointer;
+        font-size: 15px;
+        font-family: 'CircularStd';
+        line-height: 15px;
+        font-weight: 400;
+        color: #819191;
+        text-decoration: underline;
+      }
+      p:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
   .login {
     position: relative;
     float: right;

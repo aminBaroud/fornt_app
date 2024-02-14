@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { AuthService } from '../../../_services/auth/auth.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,7 +13,9 @@ export class HeaderComponent {
   currentUrl: any;
   isConnected = false;
   navbarOpen = false;
-  token:any =  localStorage.getItem("currentUser") && localStorage.getItem("currentUser")!=null ? localStorage.getItem("currentUser") :'';
+  username="Kevin";
+  token:any =  localStorage.getItem("accessToken") && localStorage.getItem("accessToken")!=null ? localStorage.getItem("accessToken") :'';
+  user:any = localStorage.getItem("user") && localStorage.getItem("user")!=null ? localStorage.getItem("user") :'';
   navigationItems = [
     { text: 'About us', href: '/aboutUs', selected: '' },
     { text: 'Why Talent Check', href: '/aboutUs#WhyTalent', selected: '' },
@@ -24,8 +27,14 @@ export class HeaderComponent {
   ];
 
 
-  constructor(private router: Router) {
-    if(this.token!=''){
+
+
+  constructor(private router: Router,
+    private AuthService: AuthService,
+    ) {
+    if(this.token==''){
+      this.isConnected =true;
+      this.username = this.user?.first_name;
       this.navigationItems = [
         { text: 'Profile', href: '/profile', selected: '' },
         { text: 'Your talent checks', href: '/start', selected: '' },
@@ -55,5 +64,9 @@ export class HeaderComponent {
   }
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+  }
+
+  logout(){
+    this.AuthService.logout();
   }
 }

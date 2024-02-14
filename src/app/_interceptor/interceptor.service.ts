@@ -24,7 +24,7 @@ export class InterceptorService implements HttpInterceptor {
       return next.handle(req);
     }
 
-      const token:any =  localStorage.getItem("currentUser") && localStorage.getItem("currentUser")!=null ? localStorage.getItem("currentUser") :'';
+      const token:any =  localStorage.getItem("accessToken") && localStorage.getItem("accessToken")!=null ? localStorage.getItem("accessToken") :'';
       req = req.clone({
       headers: req.headers.set(
           "x-access-token",

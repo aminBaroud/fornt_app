@@ -14,7 +14,7 @@ export class HeaderComponent {
   isConnected = false;
   navbarOpen = false;
   username="Kevin";
-  token:any =  localStorage.getItem("accessToken") && localStorage.getItem("accessToken")!=null ? localStorage.getItem("accessToken") :'';
+  token:any =  localStorage.getItem("access_token") && localStorage.getItem("access_token")!=null ? localStorage.getItem("access_token") :'';
   user:any = localStorage.getItem("user") && localStorage.getItem("user")!=null ? localStorage.getItem("user") :'';
   navigationItems = [
     { text: 'About us', href: '/aboutUs', selected: '' },

@@ -24,7 +24,7 @@ body {
 
 }
 
-.ressources {
+.resources {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -276,7 +276,7 @@ body {
 
 @media only screen and (max-width: 767px) {
 
-  .ressources {
+  .resources {
     top: 200px;
 
     .content {
@@ -412,7 +412,7 @@ body {
     margin-right: 10%;
   }
 
-  .ressources {
+  .resources {
     top: 300px;
 
     .content {

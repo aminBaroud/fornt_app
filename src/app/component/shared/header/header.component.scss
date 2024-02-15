@@ -4,7 +4,7 @@
   top: 45px;
   z-index: 2000;
 
-  .profile-menu{
+  .profile-menu {
     width: 400px;
     position: relative;
     top: -20px;
@@ -18,15 +18,17 @@
     align-items: center;
     justify-content: center;
 
-    .profile-text{
+    .profile-text {
       width: 200px !important;
-      span{
+
+      span {
         font-size: 15px;
         font-family: 'CircularStd';
         line-height: 15px;
         font-weight: 400;
       }
-      p{
+
+      a {
         cursor: pointer;
         font-size: 15px;
         font-family: 'CircularStd';
@@ -35,7 +37,22 @@
         color: #819191;
         text-decoration: underline;
       }
-      p:hover{
+
+      /*       p {
+        cursor: pointer;
+        font-size: 15px;
+        font-family: 'CircularStd';
+        line-height: 15px;
+        font-weight: 400;
+        color: #819191;
+        text-decoration: underline;
+      } */
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      p:hover {
         text-decoration: none;
       }
     }

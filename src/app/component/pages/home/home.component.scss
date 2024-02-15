@@ -46,7 +46,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  .welcome-content{
+  .welcome-content {
     width: 760px !important;
     position: relative;
     float: left;
@@ -87,6 +87,7 @@
     top: 40px;
     width: 142px;
   }
+
   .welcome-image {
     position: relative;
     float: left;
@@ -382,7 +383,7 @@
   }
 }
 
-.ressources {
+.resources {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -752,11 +753,13 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    .welcome-content{
+
+    .welcome-content {
       width: 324px !important;
       position: relative;
       float: left;
     }
+
     .title {
       margin-left: auto;
       margin-right: auto;
@@ -809,8 +812,8 @@
         margin-right: auto;
         width: 320px;
       }
+    }
   }
-}
 
   .btn-custom-danger {
     font-size: 12px;
@@ -969,7 +972,7 @@
     }
   }
 
-  .ressources {
+  .resources {
     top: 3037px;
 
     .content {
@@ -1197,7 +1200,7 @@
     width: 900px !important;
     text-align: left;
 
-    .welcome-content{
+    .welcome-content {
       width: 900px !important;
       position: relative;
       float: left;
@@ -1414,7 +1417,7 @@
     }
   }
 
-  .ressources {
+  .resources {
     top: 3037px;
 
     .content {
@@ -1642,7 +1645,7 @@
     width: 484px !important;
     text-align: left;
 
-    .welcome-content{
+    .welcome-content {
       width: 484px !important;
       position: relative;
       float: left;
@@ -1860,7 +1863,7 @@
     }
   }
 
-  .ressources {
+  .resources {
     top: 3037px;
 
     .content {

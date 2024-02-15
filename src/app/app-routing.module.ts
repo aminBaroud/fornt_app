@@ -12,7 +12,7 @@ import { NotFoundComponent } from './component/pages/not-found/not-found.compone
 import { ProfileComponent } from './component/pages/profile/profile.component';
 import { StartComponent } from './component/pages/reference/start/start.component';
 import { ReferenceWelcomeComponent } from './component/pages/reference/welcome/reference.welcome.component';
-import { RessourcesComponent } from './component/pages/resources/resources.component';
+import { ResourcesComponent } from './component/pages/resources/resources.component';
 import { TalentCheckComponent } from './component/pages/talent-check/talent.check.component';
 
 const routes: Routes = [
@@ -46,8 +46,8 @@ const routes: Routes = [
     canActivate: [authGuard],
   },
   {
-    path: 'ressources',
-    component: RessourcesComponent,
+    path: 'resources',
+    component: ResourcesComponent,
     pathMatch: 'full',
     canActivate: [authGuard],
   },

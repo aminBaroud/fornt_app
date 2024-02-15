@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './resources.component.html',
   styleUrl: './resources.component.scss',
 })
-export class RessourcesComponent {
+export class ResourcesComponent {
   constructor() {
     localStorage.setItem('showLogin', 'false');
   }

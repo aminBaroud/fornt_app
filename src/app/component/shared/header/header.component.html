@@ -1,6 +1,4 @@
 <section>
-
-
   <div class="talent-header">
     <nav class="px-0 navbarFixedTop ">
       <div class="container">
@@ -47,12 +45,10 @@
                 IN</button></div>
           </div>
           <div [hidden]="isConnected" class="profile-menu">
-            <div class="profile-image"><img src="../../../../assets/img/menu/user.png" ></div>
-            <div class="profile-text">Welcome, <span>{{username}}</span>
+            <div class="profile-image"><img src="../../../../assets/img/menu/user.png"></div>
+            <div class="profile-text">Welcome, <span>{{user.first_name}}</span>
               <p (click)="logout()">Logout</p>
             </div>
-
-
           </div>
         </div>
       </div>

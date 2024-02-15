@@ -13,32 +13,36 @@ export class HeaderComponent {
   currentUrl: any;
   isConnected = false;
   navbarOpen = false;
-  username="Kevin";
-  token:any =  localStorage.getItem("access_token") && localStorage.getItem("access_token")!=null ? localStorage.getItem("access_token") :'';
-  user:any = localStorage.getItem("user") && localStorage.getItem("user")!=null ? localStorage.getItem("user") :'';
+  navigation: any;
+  token: any =
+    localStorage.getItem('access_token') &&
+    localStorage.getItem('access_token') != null
+      ? localStorage.getItem('access_token')
+      : '';
+  user: any =
+    localStorage.getItem('user') && localStorage.getItem('user') != null
+      ? JSON.parse(localStorage.getItem('user') as string)
+      : '';
   navigationItems = [
     { text: 'About us', href: '/aboutUs', selected: '' },
     { text: 'Why Talent Check', href: '/aboutUs#WhyTalent', selected: '' },
     { text: 'How it works', href: '/aboutUs#HowItWorks', selected: '' },
     { text: 'Trusted by', href: '/aboutUs#TrustedBy', selected: '' },
     { text: 'Plans', href: '/aboutUs#Plans', selected: '' },
-    { text: 'Resources', href: '/aboutUs#Ressources', selected: '' },
+    { text: 'Resources', href: '/aboutUs#Resources', selected: '' },
     { text: 'Contact us', href: '/aboutUs#ContactUs', selected: '' },
   ];
 
-
-
-
-  constructor(private router: Router,
-    private AuthService: AuthService,
-    ) {
-    if(this.token==''){
-      this.isConnected =true;
-      this.username = this.user?.first_name;
+  constructor(private router: Router, private AuthService: AuthService) {
+    console.log('token first ===> ', this.token);
+    if (this.token != '') {
+      console.log('is it getting here');
+      this.isConnected = true;
+      //console.log('username ===> ', this.first_name);
       this.navigationItems = [
         { text: 'Profile', href: '/profile', selected: '' },
         { text: 'Your talent checks', href: '/start', selected: '' },
-        { text: 'Ressources', href: '/ressources', selected: '' },
+        { text: 'Resources', href: '/resources', selected: '' },
         { text: 'Contact us', href: '/contact-us', selected: '' },
       ];
     }
@@ -66,7 +70,7 @@ export class HeaderComponent {
     this.navbarOpen = !this.navbarOpen;
   }
 
-  logout(){
+  logout() {
     this.AuthService.logout();
   }
 }

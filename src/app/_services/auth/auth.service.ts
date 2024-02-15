@@ -52,11 +52,8 @@ export class AuthService {
             JSON.stringify(data.tokens.refresh_token)
           );
           localStorage.setItem('isConnected', 'true');
-
-          localStorage.setItem(
-            'user',
-            JSON.stringify(data.user)
-          );
+          //localStorage.setItem('first_name', data.user.first_name);
+          localStorage.setItem('user', JSON.stringify(data.user));
           this.userSubject.next(data.tokens.access_token);
           return data.tokens.access_token;
         })

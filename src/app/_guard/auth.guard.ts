@@ -2,7 +2,7 @@ import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 
 export const authGuard: CanActivateFn = (route, state) => {
-  const token: any =
+  const token: string | null =
     localStorage.getItem('access_token') &&
     localStorage.getItem('access_token') != null
       ? localStorage.getItem('access_token')

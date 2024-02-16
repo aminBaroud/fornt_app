@@ -60,7 +60,18 @@ export class HeaderComponent {
             item.selected = '';
           }
         });
-        console.log('Current route', this.currentUrl);
+
+        this.token =
+        localStorage.getItem('access_token') &&
+        localStorage.getItem('access_token') != null
+          ? localStorage.getItem('access_token')
+          : '';
+
+          if (this.token != '') {
+            this.isConnected = true;
+          }else{
+            this.isConnected = false;
+          }
       }
     });
 
@@ -74,6 +85,6 @@ export class HeaderComponent {
   }
 
   logout() {
-    this.AuthService.logout();
+      return this.AuthService.logout().subscribe();
   }
 }

@@ -38,13 +38,13 @@
         </div>
 
         <div class="TopButtons mob-hide">
-          <div [hidden]="!isConnected">
+          <div [hidden]="isConnected">
             <div class="signin"><button class="btn btn-custom-danger form-control" routerLink="auth/signup">SIGN
                 IN</button></div>
             <div class="login"><button class="btn btn-custom-cancel form-control" routerLink="auth/login">LOG
                 IN</button></div>
           </div>
-          <div [hidden]="isConnected" class="profile-menu">
+          <div [hidden]="!isConnected" class="profile-menu">
             <div class="profile-image"><img src="../../../../assets/img/menu/user.png"></div>
             <div class="profile-text">Welcome, <span>{{user.first_name}}</span>
               <p (click)="logout()">Logout</p>

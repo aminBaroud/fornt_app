@@ -46,6 +46,9 @@ export class HeaderComponent {
         { text: 'Contact us', href: '/contact-us', selected: '' },
       ];
     }
+    else{
+      this.isConnected = false;
+    }
 
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {

@@ -61,14 +61,12 @@ export class AuthService {
   }
 
   logout() {
-    return this.http.get<any>(`${dev.apiUrl}/auth/logout`).pipe(
-      map(() => {
-        localStorage.removeItem('access_token');
-        localStorage.removeItem('refresh_token');
-        this.userSubject.next(null);
-        this.router.navigate(['/auth/login']);
-      })
-    );
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    localStorage.removeItem('isConnected');
+    localStorage.removeItem('user');
+    this.http.get<any>(`${dev.apiUrl}/auth/logout`).pipe();
+    this.router.navigate(['/']);
   }
 
   refreshAccessToken(refresh_token: string) {

@@ -34,9 +34,7 @@ export class HeaderComponent {
   ];
 
   constructor(private router: Router, private AuthService: AuthService) {
-    console.log('token first ===> ', this.token);
     if (this.token != '') {
-      console.log('is it getting here');
       this.isConnected = true;
       //console.log('username ===> ', this.first_name);
       this.navigationItems = [
@@ -45,8 +43,7 @@ export class HeaderComponent {
         { text: 'Resources', href: '/resources', selected: '' },
         { text: 'Contact us', href: '/contact-us', selected: '' },
       ];
-    }
-    else{
+    } else {
       this.isConnected = false;
     }
 
@@ -60,18 +57,7 @@ export class HeaderComponent {
             item.selected = '';
           }
         });
-
-        this.token =
-        localStorage.getItem('access_token') &&
-        localStorage.getItem('access_token') != null
-          ? localStorage.getItem('access_token')
-          : '';
-
-          if (this.token != '') {
-            this.isConnected = true;
-          }else{
-            this.isConnected = false;
-          }
+        console.log('Current route', this.currentUrl);
       }
     });
 
@@ -85,6 +71,6 @@ export class HeaderComponent {
   }
 
   logout() {
-      return this.AuthService.logout().subscribe();
+    this.AuthService.logout();
   }
 }

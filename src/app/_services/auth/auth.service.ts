@@ -66,7 +66,7 @@ export class AuthService {
     localStorage.removeItem('isConnected');
     localStorage.removeItem('user');
     this.http.get<any>(`${dev.apiUrl}/auth/logout`).pipe();
-    this.router.navigate(['/']);
+    this.router.navigate(['/aboutUs']);
   }
 
   refreshAccessToken(refresh_token: string) {

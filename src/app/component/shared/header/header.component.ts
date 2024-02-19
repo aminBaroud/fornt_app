@@ -57,7 +57,19 @@ export class HeaderComponent {
             item.selected = '';
           }
         });
-        console.log('Current route', this.currentUrl);
+        // add this part to change menu when login
+
+        this.token =
+        localStorage.getItem('access_token') &&
+        localStorage.getItem('access_token') != null
+          ? localStorage.getItem('access_token')
+          : '';
+
+          if (this.token != '') {
+            this.isConnected = true;
+          }else{
+            this.isConnected = false;
+          }
       }
     });
 

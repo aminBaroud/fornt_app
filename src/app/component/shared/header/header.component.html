@@ -47,7 +47,7 @@
           <div [hidden]="!isConnected" class="profile-menu">
             <div class="profile-image"><img src="../../../../assets/img/menu/user.png"></div>
             <div class="profile-text">Welcome, <span>{{user.first_name}}</span>
-              <p (click)="logout()">Logout</p>
+              <a (click)="logout()"> Logout</a>
             </div>
           </div>
         </div>

@@ -943,14 +943,14 @@
         width: 100%;
 
         img {
-          margin-left: 10%;
-          margin-right: 10%;
-          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          width: 289px;
         }
       }
 
       .image {
-        left: 283px;
+        left: 424px;
         top: 136px;
         width: 197px;
         height: 167px;
@@ -980,6 +980,30 @@
         }
       }
     }
+
+    .images {
+      width: 100%;
+
+      .carousel-container {
+        position: relative;
+        top: 0px;
+        color: white;
+        width: 100%;
+        z-index: 10;
+
+
+        .spotify {
+          width: 100%;
+          text-align: center;
+          height: 150px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
   }
   #Plans{
     position: absolute;
@@ -1198,6 +1222,7 @@
       color: white;
       width: 100%;
       z-index: 10;
+
 
       .spotify {
         width: 300px;
@@ -1661,8 +1686,6 @@
 
 
 @media only screen and (max-width: 991px) {}
-
-@media only screen and (max-width: 767px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 

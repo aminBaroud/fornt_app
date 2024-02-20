@@ -151,6 +151,7 @@
 
 <ngb-carousel class="carousel-container mob-tab carousel-dark slide" #carousel>
   <ng-template ngbSlide>
+    <div class="plan">
     <div class="plan-free">
       <div class="top-image">
         <div class="image"></div>
@@ -186,8 +187,10 @@
         </div>
       </div>
     </div>
+  </div>
   </ng-template>
   <ng-template ngbSlide>
+    <div class="plan">
     <div class="plan-basic">
       <div class="top-image">
         <div class="image"></div>
@@ -223,8 +226,10 @@
         </div>
       </div>
     </div>
+    </div>
   </ng-template>
   <ng-template ngbSlide>
+    <div class="plan">
     <div class="plan-premium">
       <div class="top-image">
         <div class="image"></div>
@@ -261,9 +266,11 @@
         </div>
       </div>
     </div>
+    </div>
   </ng-template>
 
   <ng-template ngbSlide>
+    <div class="plan">
     <div class="plan-executive">
       <div class="top-image">
         <div class="image"></div>
@@ -300,6 +307,7 @@
           <button class="btn btn-custom-danger" (click)="openPopup('executive')">Select</button>
         </div>
       </div>
+    </div>
     </div>
   </ng-template>
 

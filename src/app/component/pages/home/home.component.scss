@@ -727,6 +727,9 @@
   ::ng-deep .carousel-control-prev {
     display: none;
   }
+  .home-div{
+    margin-bottom: 0px !important;
+  }
 
   ::ng-deep .carousel-dark .carousel-indicators [data-bs-target] {
     background-color: #002E9D;
@@ -759,7 +762,7 @@
   .line {
     top: 10px;
     width: 100%;
-    height: 3666.88px;
+    height: 3300px;
     background-size: 100% 100%;
     right: 0px;
     margin-bottom: 350px;
@@ -1250,11 +1253,14 @@
 
 
   }
+  .home-div{
+    margin-bottom: 0px !important;
+  }
 
   .line {
     top: 10px;
     width: 100%;
-    height: 3666.88px;
+    height: 3200px;
     background-size: 100% 100%;
     right: 0px;
   }
@@ -1712,11 +1718,14 @@
       }
     }
   }
+  .home-div{
+    margin-bottom: 0px !important;
+  }
 
   .line {
     top: 10px;
     width: 100%;
-    height: 3666.88px;
+    height: 3300px;
     background-size: 100% 100%;
     right: 0px;
   }

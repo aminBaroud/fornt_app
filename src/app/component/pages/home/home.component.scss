@@ -39,6 +39,7 @@
   z-index: -1;
 }
 
+
 .welcome-text {
   position: relative;
   width: 1263px !important;
@@ -112,6 +113,10 @@
   color: whitesmoke;
 }
 
+#WhyTalent{
+  position: absolute;
+  top: 656px;
+}
 .main-talent {
   display: flex;
   flex-direction: row;
@@ -214,7 +219,10 @@
   background-repeat: no-repeat;
   z-index: -1;
 }
-
+#HowItWorks{
+  position: absolute;
+  top: 1759px;
+}
 .works {
   display: flex;
   flex-direction: row;
@@ -223,7 +231,7 @@
   width: 100%;
   height: 598px;
   position: absolute;
-  top: 1555px;
+  top: 1959px;
 
   .content {
     font-size: 16px;
@@ -273,7 +281,10 @@
   }
 
 }
-
+#TrustedBy{
+  position: absolute;
+  top: 1355px;
+}
 .trusted {
   display: flex;
   flex-direction: row;
@@ -282,7 +293,7 @@
   width: 100%;
   height: 221px;
   position: absolute;
-  top: 2313px;
+  top: 1555px;
 
   .content {
     font-size: 16px;
@@ -343,7 +354,10 @@
   background-size: 100%;
   z-index: -1;
 }
-
+#Plans{
+  position: absolute;
+  top: 2549px;
+}
 .plans {
   display: flex;
   flex-direction: row;
@@ -382,7 +396,10 @@
     }
   }
 }
-
+#Resources{
+  position: absolute;
+  top: 3456px;
+}
 .resources {
   display: flex;
   flex-direction: row;
@@ -565,7 +582,10 @@
     }
   }
 }
-
+#ContactUs{
+  position: absolute;
+  top: 4103px;
+}
 .contact-us {
   display: flex;
   flex-direction: row;
@@ -831,6 +851,10 @@
     color: whitesmoke;
   }
 
+  #WhyTalent{
+    position: absolute;
+    top: 656px;
+  }
   .main-talent {
     height: auto;
     position: absolute;
@@ -891,8 +915,13 @@
 
   }
 
+  #HowItWorks{
+    position: absolute;
+    top: 1716px;
+  }
   .works {
-    top: 1428px;
+    top: 1716px;
+    z-index: 1000;
 
     .content {
       .title {
@@ -929,9 +958,12 @@
     }
 
   }
-
+  #TrustedBy{
+    position: absolute;
+    top: 1400px;
+  }
   .trusted {
-    top: 1952px;
+    top: 1600px;
 
     .content {
       .title {
@@ -949,7 +981,10 @@
       }
     }
   }
-
+  #Plans{
+    position: absolute;
+    top: 2029px;
+  }
   .plans {
     top: 2229px;
 
@@ -971,7 +1006,10 @@
       }
     }
   }
-
+  #Resources{
+    position: absolute;
+    top: 2837px;
+  }
   .resources {
     top: 3037px;
 
@@ -1085,7 +1123,10 @@
       }
     }
   }
-
+  #ContactUs{
+    position: absolute;
+    top: 3688px;
+  }
   .contact-us {
     top: 3888px;
     z-index: 20;
@@ -1276,7 +1317,10 @@
     background: rgb(202, 0, 16, .5);
     color: whitesmoke;
   }
-
+  #WhyTalent{
+    position: absolute;
+    top: 556px;
+  }
   .main-talent {
     height: auto;
     position: absolute;
@@ -1338,9 +1382,13 @@
     }
 
   }
-
+  #HowItWorks{
+    position: absolute;
+    top: 1550px;
+  }
   .works {
-    top: 1428px;
+    top: 1650px;
+    z-index: 1000;
 
     .content {
       .title {
@@ -1375,9 +1423,12 @@
     }
 
   }
-
+  #TrustedBy{
+    position: absolute;
+    top: 1232px;
+  }
   .trusted {
-    top: 1952px;
+    top: 1432px;
 
     .content {
       .title {
@@ -1395,7 +1446,10 @@
       }
     }
   }
-
+  #Plans{
+    position: absolute;
+    top: 2029px;
+  }
   .plans {
     top: 2229px;
 
@@ -1416,7 +1470,10 @@
       }
     }
   }
-
+  #Resources{
+    position: absolute;
+    top: 2837px;
+  }
   .resources {
     top: 3037px;
 
@@ -1532,7 +1589,10 @@
       }
     }
   }
-
+  #ContactUs{
+    position: absolute;
+    top: 3488px;
+  }
   .contact-us {
     top: 3670px;
     z-index: 20;
@@ -1721,7 +1781,10 @@
     background: rgb(202, 0, 16, .5);
     color: whitesmoke;
   }
-
+  #WhyTalent{
+    position: absolute;
+    top: 656px;
+  }
   .main-talent {
     height: auto;
     position: absolute;
@@ -1782,9 +1845,13 @@
     }
 
   }
-
+  #HowItWorks{
+    position: absolute;
+    top: 1716px;
+  }
   .works {
-    top: 1428px;
+    top: 1716px;
+    z-index: 1000;
 
     .content {
       .title {
@@ -1821,10 +1888,12 @@
     }
 
   }
-
+  #TrustedBy{
+    position: absolute;
+    top: 1400px;
+  }
   .trusted {
-    top: 1952px;
-
+    top: 1600px;
     .content {
       .title {
         font-size: 25px;
@@ -1841,7 +1910,10 @@
       }
     }
   }
-
+  #Plans{
+    position: absolute;
+    top: 2029px;
+  }
   .plans {
     top: 2229px;
 
@@ -1862,7 +1934,10 @@
       }
     }
   }
-
+  #Resources{
+    position: absolute;
+    top: 2837px;
+  }
   .resources {
     top: 3037px;
 
@@ -1978,7 +2053,10 @@
       }
     }
   }
-
+  #ContactUs{
+    position: absolute;
+    top: 3488px;
+  }
   .contact-us {
     top: 3670px;
     z-index: 20;

@@ -3,33 +3,39 @@
     <img src="../../../../assets/img/landing/topleft.png" class="topleft" />
 
   </div>
-  <div class="welcome-text">
-    <div class="welcome-content">
-      <div class="title">
-        Welcome to Talent Checks!
-        <div class="image">
-          <img src="../../../../assets/img/landing/under-welcome.png" />
+  <div class="welcome-part">
+    <div class="welcome-text">
+      <div class="welcome-image mob-tab">
+        <img src="../../../../assets/img/landing/welcome_talents.png" />
+      </div>
+      <div class="welcome-content">
+        <div class="title">
+          Welcome to Talent Checks!
+          <div class="image">
+            <img src="../../../../assets/img/landing/under-welcome.png" />
+          </div>
+        </div>
+        <div class="text">
+          Discover the only automated reference checking platform for both candidates and organizations. Candidates can
+          effortlessly collect, securely store, and easily share video & text references with future employers.
+          Organizations benefit from streamlined access to these reliable references, enhancing their hiring process.
+          Experience efficiency and convenience at the click of a button with Talent Checks!
+
+        </div>
+        <div class="button">
+          <div class="start"><button class="btn btn-custom-danger form-control">Lets start!</button></div>
         </div>
       </div>
-      <div class="text">
-        Discover the only automated reference checking platform for both candidates and organizations. Candidates can
-        effortlessly collect, securely store, and easily share video & text references with future employers.
-        Organizations benefit from streamlined access to these reliable references, enhancing their hiring process.
-        Experience efficiency and convenience at the click of a button with Talent Checks!
-
+      <div class="welcome-image desktop-tab">
+        <img src="../../../../assets/img/landing/welcome_talents.png" />
       </div>
-      <div class="button">
-        <div class="start"><button class="btn btn-custom-danger form-control">Lets start!</button></div>
-      </div>
-    </div>
 
-    <div class="welcome-image">
-      <img src="../../../../assets/img/landing/welcome_talents.png" />
+
     </div>
   </div>
   <div class="rightBG"></div>
   <div class="line"></div>
-  <div id="WhyTalent"></div>
+  <div class="WhyTalent-part" id="WhyTalent">
   <div class="main-talent" >
     <div class="talent-ckech">
       <div class="title">
@@ -54,9 +60,9 @@
       </div>
     </div>
   </div>
+</div>
   <div class="leftBG1"></div>
-
-  <div id="TrustedBy"></div>
+  <div class="TrustedBy-part" id="TrustedBy">
   <div class="trusted">
     <div class="content">
       <div class="title">Trusted by
@@ -95,8 +101,8 @@
 
     </div>
   </div>
-
-<div id="HowItWorks"></div>
+</div>
+<div class="HowItWorks-part" id="HowItWorks">
   <div class="works" >
     <div class="content">
       <div class="title">How it works?
@@ -108,12 +114,12 @@
       <div class="image"></div>
     </div>
   </div>
-
+</div>
 
 
   <div class="rightBG2"></div>
   <div class="leftBG2"></div>
-  <div id="Plans"></div>
+  <div class="Plans-part" id="Plans">
   <div class="plans">
     <div class="content">
       <div class="title">Plans
@@ -124,7 +130,8 @@
       <app-plan></app-plan>
     </div>
   </div>
-  <div id="Resources"></div>
+</div>
+<div class="Resources-part" id="Resources">
   <div class="resources">
     <div class="content">
       <div class="title">Resources
@@ -183,7 +190,8 @@
       </div>
     </div>
   </div>
-  <div id="ContactUs"></div>
+</div>
+<div class="ContactUs-part" id="ContactUs" >
   <div class="contact-us" >
     <div class="content">
       <div class="title">Contact us
@@ -203,11 +211,14 @@
           </a>
         </div>
       </div>
-
+      <div class="rightBG4 desktop-tab"></div>
     </div>
+
   </div>
+  <div class="rightBG4 mob-tab"></div>
+</div>
   <div class="leftBG3"></div>
   <div class="rightBG3"></div>
-  <div class="rightBG4"></div>
+
   <div class="upButton" [hidden]="!GoTopBtn" (click)="goUp()"></div>
 </div>

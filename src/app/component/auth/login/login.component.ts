@@ -31,9 +31,10 @@ export class LoginComponent {
       .pipe(first())
       .subscribe({
         next: () => {
-          const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+          //const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
           this.isConnected = true;
-          this.router.navigate([returnUrl]);
+          this.router.navigate(['/profile']);
+          //this.router.navigate([returnUrl]);
         },
         error: (error) => {
           console.log('Error : ', error);

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   margin-bottom: 1px;
 }
 
@@ -25,7 +25,7 @@
   right: 200px;
   z-index: -20;
   margin-bottom: 30px;
-  position: relative;
+  position: absolute;
 }
 
 .rightBG {
@@ -39,11 +39,18 @@
   z-index: -1;
 }
 
+.welcome-part{
+  display: flex;
+  flex-direction: row;
+  align-items:flex-end;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
 
+}
 .welcome-text {
   position: relative;
   width: 1263px !important;
-  top: 260px;
   margin-left: auto;
   margin-right: auto;
 
@@ -113,10 +120,16 @@
   color: whitesmoke;
 }
 
-#WhyTalent {
-  position: absolute;
-  top: 656px;
+.WhyTalent-part{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+
 }
+
 
 .main-talent {
   display: flex;
@@ -125,8 +138,7 @@
   justify-content: center;
   width: 100%;
   height: 543px;
-  position: absolute;
-  top: 856px;
+
 
   .talent-ckech {
     padding-top: 50px;
@@ -221,26 +233,31 @@
   z-index: -1;
 }
 
-#HowItWorks {
-  position: absolute;
-  top: 1759px;
-}
-
-.works {
+.HowItWorks-part{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+
+.works {
+
   width: 100%;
   height: 598px;
-  position: absolute;
-  top: 1959px;
+
 
   .content {
     font-size: 16px;
     font-weight: 600;
     font-family: 'CircularStd';
     color: #1F1F1F;
+    margin-left: auto;
+    margin-right: auto;
+    width: 780px;
 
     .title {
       width: 100%;
@@ -268,27 +285,33 @@
       font-style: italic;
       font-family: 'CircularStd';
       color: #1F1F1F;
+      z-index: 2;
     }
 
     .image {
-      position: absolute;
-      left: 133px;
-      top: 41px;
+      position: relative;
+      left: -302px;
+      top: -701px;
       width: 494px;
       height: 418px;
       background-image: url("../../../../assets/img/landing/How_it_works.png");
       background-size: 100%;
       background-repeat: no-repeat;
-      z-index: -1;
+      z-index: 1;
     }
   }
 
 }
+.TrustedBy-part{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
 
-#TrustedBy {
-  position: absolute;
-  top: 1355px;
 }
+
 
 .trusted {
   display: flex;
@@ -297,8 +320,7 @@
   justify-content: center;
   width: 100%;
   height: 221px;
-  position: absolute;
-  top: 1555px;
+
 
   .content {
     font-size: 16px;
@@ -359,10 +381,14 @@
   background-size: 100%;
   z-index: -1;
 }
+.Plans-part{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
 
-#Plans {
-  position: absolute;
-  top: 2549px;
 }
 
 .plans {
@@ -372,8 +398,6 @@
   justify-content: center;
   width: 100%;
   height: 711px;
-  position: absolute;
-  top: 2749px;
 
   .content {
     font-size: 16px;
@@ -403,10 +427,14 @@
     }
   }
 }
+.Resources-part{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
 
-#Resources {
-  position: absolute;
-  top: 3456px;
 }
 
 .resources {
@@ -416,8 +444,6 @@
   justify-content: center;
   width: 100%;
   height: 507px;
-  position: absolute;
-  top: 3656px;
 
   .content {
     font-size: 16px;
@@ -591,12 +617,15 @@
     }
   }
 }
+.ContactUs-part{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
 
-#ContactUs {
-  position: absolute;
-  top: 4103px;
 }
-
 .contact-us {
   display: flex;
   flex-direction: row;
@@ -604,8 +633,6 @@
   justify-content: center;
   width: 100%;
   height: 311px;
-  position: absolute;
-  top: 4303px;
 
   .content {
     font-size: 16px;
@@ -695,10 +722,11 @@
 }
 
 .rightBG4 {
-  position: absolute;
-  width: 387px;
-  height: 368px;
-  top: 4234px;
+  position: relative;
+  width: 179px;
+  height: 170px;
+  float: left;
+  top: 0px;
   left: 20px;
   background-image: url("../../../../assets/img/landing/Resources.png");
   background-repeat: no-repeat;
@@ -779,10 +807,22 @@
     right: 0px;
     margin-bottom: 350px;
   }
+  .welcome-part{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+
+
+  }
 
   .welcome-text {
-    top: 237px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
     left: 0px;
     width: 289px !important;
     margin-left: auto;
@@ -791,8 +831,7 @@
 
     .welcome-content {
       width: 289px !important;
-      position: relative;
-      float: left;
+      height: 300px;
     }
 
     .title {
@@ -836,8 +875,9 @@
     }
 
     .welcome-image {
+      position:static;
       width: 100%;
-      top: -580px;
+      height: 300px;
       left: 0px;
       text-align: center;
 
@@ -866,15 +906,18 @@
     color: whitesmoke;
   }
 
-  #WhyTalent {
-    position: absolute;
-    top: 656px;
+  .WhyTalent-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
   }
-
   .main-talent {
     height: auto;
     position: absolute;
-    top: 752px;
+
 
     .talent-ckech {
       padding-top: 80px;
@@ -931,16 +974,22 @@
 
   }
 
-  #HowItWorks {
-    position: absolute;
-    top: 1716px;
+  .HowItWorks-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    width: 100%;
+
   }
-
   .works {
-    top: 1716px;
     z-index: 1000;
-
+    height: 300px;
+    width: 100%;
+    left: 0px;
     .content {
+      width:87%;
       .title {
         font-size: 25px;
         font-weight: 700;
@@ -958,6 +1007,7 @@
 
       .video {
         width: 100%;
+       text-align: center;
 
         img {
           margin-left: auto;
@@ -967,22 +1017,23 @@
       }
 
       .image {
-        left: 424px;
-        top: 136px;
+        left: 244px;
+        top: -286px;
         width: 197px;
         height: 167px;
       }
     }
 
   }
-
-  #TrustedBy {
-    position: absolute;
-    top: 1400px;
+  .TrustedBy-part{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 40vh;
+    width: 100%;
   }
-
   .trusted {
-    top: 1600px;
 
     .content {
       .title {
@@ -1024,14 +1075,17 @@
     }
 
   }
+  .Plans-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    width: 100%;
 
-  #Plans {
-    position: absolute;
-    top: 2029px;
   }
-
   .plans {
-    top: 2229px;
+
 
     .content {
       .title {
@@ -1052,13 +1106,16 @@
     }
   }
 
-  #Resources {
-    position: absolute;
-    top: 2837px;
-  }
+  .Resources-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
 
+  }
   .resources {
-    top: 3037px;
 
     .content {
       .title {
@@ -1171,13 +1228,15 @@
     }
   }
 
-  #ContactUs {
-    position: absolute;
-    top: 3688px;
+  .ContactUs-part{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+    min-height: 80vh;
+    width: 100%;
   }
-
   .contact-us {
-    top: 3888px;
     z-index: 20;
 
     .content {
@@ -1220,10 +1279,12 @@
   }
 
   .rightBG4 {
+    position: relative;
     width: 179px;
     height: 170px;
-    top: 4195px;
-    left: 35%;
+    top: 0px;
+
+
   }
 
   .upButton {
@@ -1288,22 +1349,33 @@
     right: 0px;
   }
 
+  .welcome-part{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    min-height: 70vh;
+    width: 100%;
+
+  }
   .welcome-text {
+
     top: 190px;
     position: relative;
     left: 50px;
     width: 900px !important;
     text-align: left;
 
+
     .welcome-content {
       width: 900px !important;
-      position: relative;
-      float: left;
+      height: 300px;
     }
 
     .welcome-image {
-      width: 100%;
-      top: -380px;
+      position: relative;
+      float: right;
+      height: 300px;
       left: 0px;
       right: 10%;
       text-align: right;
@@ -1311,7 +1383,7 @@
       img {
         position: relative;
         right: 4%;
-        width: 350px;
+        width: 300px;
       }
     }
 
@@ -1372,10 +1444,6 @@
     color: whitesmoke;
   }
 
-  #WhyTalent {
-    position: absolute;
-    top: 556px;
-  }
 
   .main-talent {
     height: auto;
@@ -1439,10 +1507,7 @@
 
   }
 
-  #HowItWorks {
-    position: absolute;
-    top: 1550px;
-  }
+
 
   .works {
     top: 1650px;
@@ -1474,17 +1539,12 @@
 
       .image {
         left: 40px;
-        top: 119px;
+        top: -369px;
         width: 197px;
         height: 167px;
       }
     }
 
-  }
-
-  #TrustedBy {
-    position: absolute;
-    top: 1232px;
   }
 
   .trusted {
@@ -1507,11 +1567,6 @@
     }
   }
 
-  #Plans {
-    position: absolute;
-    top: 2029px;
-  }
-
   .plans {
     top: 2229px;
 
@@ -1531,11 +1586,6 @@
         }
       }
     }
-  }
-
-  #Resources {
-    position: absolute;
-    top: 2837px;
   }
 
   .resources {
@@ -1653,12 +1703,14 @@
       }
     }
   }
-
-  #ContactUs {
-    position: absolute;
-    top: 3488px;
+  .ContactUs-part{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+    min-height: 80vh;
+    width: 100%;
   }
-
   .contact-us {
     top: 3670px;
     z-index: 20;
@@ -1706,10 +1758,11 @@
   }
 
   .rightBG4 {
+    position: relative;
     width: 179px;
     height: 170px;
-    top: 3888px;
-    left: 6%;
+    top: 0px;
+
   }
 
   .upButton {
@@ -1850,10 +1903,6 @@
     color: whitesmoke;
   }
 
-  #WhyTalent {
-    position: absolute;
-    top: 656px;
-  }
 
   .main-talent {
     height: auto;
@@ -1916,10 +1965,6 @@
 
   }
 
-  #HowItWorks {
-    position: absolute;
-    top: 1716px;
-  }
 
   .works {
     top: 1716px;
@@ -1961,11 +2006,6 @@
 
   }
 
-  #TrustedBy {
-    position: absolute;
-    top: 1400px;
-  }
-
   .trusted {
     top: 1600px;
 
@@ -1986,10 +2026,6 @@
     }
   }
 
-  #Plans {
-    position: absolute;
-    top: 2029px;
-  }
 
   .plans {
     top: 2229px;
@@ -2012,10 +2048,6 @@
     }
   }
 
-  #Resources {
-    position: absolute;
-    top: 2837px;
-  }
 
   .resources {
     top: 3037px;
@@ -2133,10 +2165,6 @@
     }
   }
 
-  #ContactUs {
-    position: absolute;
-    top: 3488px;
-  }
 
   .contact-us {
     top: 3670px;

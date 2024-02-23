@@ -18,7 +18,7 @@
 .line {
   top: 352px;
   width: 1263px;
-  height: 4004px;
+  height: 1004px;
   background-image: url(../../../../assets/img/landing/Line.png);
   background-repeat: no-repeat;
   float: right;
@@ -39,15 +39,16 @@
   z-index: -1;
 }
 
-.welcome-part{
+.welcome-part {
   display: flex;
   flex-direction: row;
-  align-items:flex-end;
+  align-items: flex-end;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 55vh;
   width: 100%;
 
 }
+
 .welcome-text {
   position: relative;
   width: 1263px !important;
@@ -58,6 +59,7 @@
     width: 760px !important;
     position: relative;
     float: left;
+    top: 80px;
   }
 
   .title {
@@ -99,7 +101,7 @@
   .welcome-image {
     position: relative;
     float: left;
-    top: -257px;
+    bottom: 30px;
     width: 427px;
   }
 }
@@ -120,14 +122,13 @@
   color: whitesmoke;
 }
 
-.WhyTalent-part{
+.WhyTalent-part {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 30vh;
   width: 100%;
-
 }
 
 
@@ -167,7 +168,7 @@
         position: relative;
         float: left;
         left: 483px;
-        top: -27px;
+        bottom: 27px;
         z-index: 2;
       }
 
@@ -215,7 +216,7 @@
       background-image: url("../../../../assets/img/landing/talanet_check.png");
       background-size: 100%;
       background-repeat: no-repeat;
-      right: -20px;
+      left: 20px;
       bottom: 0px;
     }
   }
@@ -233,12 +234,12 @@
   z-index: -1;
 }
 
-.HowItWorks-part{
+.HowItWorks-part {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  /* min-height: 10vh; */
   width: 100%;
 
 }
@@ -248,7 +249,6 @@
 
   width: 100%;
   height: 598px;
-
 
   .content {
     font-size: 16px;
@@ -290,8 +290,8 @@
 
     .image {
       position: relative;
-      left: -302px;
-      top: -701px;
+      right: 302px;
+      bottom: 701px;
       width: 494px;
       height: 418px;
       background-image: url("../../../../assets/img/landing/How_it_works.png");
@@ -302,12 +302,13 @@
   }
 
 }
-.TrustedBy-part{
+
+.TrustedBy-part {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 20vh;
   width: 100%;
 
 }
@@ -318,8 +319,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 55%;
   height: 221px;
+  min-height: 85vh;
 
 
   .content {
@@ -353,6 +355,10 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+
+      .img-element img {
+        width: 120px;
+      }
     }
 
 
@@ -381,14 +387,14 @@
   background-size: 100%;
   z-index: -1;
 }
-.Plans-part{
+
+.Plans-part {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 10vh;
   width: 100%;
-
 }
 
 .plans {
@@ -427,12 +433,13 @@
     }
   }
 }
-.Resources-part{
+
+.Resources-part {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
 
 }
@@ -582,7 +589,7 @@
           position: relative;
           float: right;
           width: 0px;
-          top: -113px;
+          bottom: 113px;
           right: 133px
         }
       }
@@ -617,15 +624,17 @@
     }
   }
 }
-.ContactUs-part{
+
+.ContactUs-part {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 10vh;
   width: 100%;
 
 }
+
 .contact-us {
   display: flex;
   flex-direction: row;
@@ -702,7 +711,7 @@
   position: absolute;
   width: 1033px;
   height: 1223px;
-  top: 3510.16px;
+  bottom: 10px;
   right: 0px;
   background-image: url("../../../../assets/img/landing/BG6.1.png");
   background-repeat: no-repeat;
@@ -714,7 +723,7 @@
   position: absolute;
   width: 314px;
   height: 730px;
-  top: 4000.72px;
+  bottom: 10px;
   left: 0px;
   background-image: url("../../../../assets/img/landing/BG6.png");
   background-repeat: no-repeat;
@@ -739,7 +748,7 @@
   z-index: 100;
   width: 30px;
   height: 99px;
-  top: 70%;
+  bottom: 5%;
   right: 30px;
   background-image: url("../../../../assets/img/landing/Up.png");
   background-repeat: no-repeat;
@@ -802,15 +811,16 @@
   .line {
     top: 10px;
     width: 100%;
-    height: 3300px;
+    height: 1300px;
     background-size: 100% 100%;
     right: 0px;
     margin-bottom: 350px;
   }
-  .welcome-part{
+
+  .welcome-part {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
@@ -821,7 +831,7 @@
   .welcome-text {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     left: 0px;
     width: 289px !important;
@@ -875,7 +885,7 @@
     }
 
     .welcome-image {
-      position:static;
+      position: static;
       width: 100%;
       height: 300px;
       left: 0px;
@@ -906,7 +916,7 @@
     color: whitesmoke;
   }
 
-  .WhyTalent-part{
+  .WhyTalent-part {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -914,6 +924,7 @@
     min-height: 100vh;
     width: 100%;
   }
+
   .main-talent {
     height: auto;
     position: absolute;
@@ -974,22 +985,25 @@
 
   }
 
-  .HowItWorks-part{
+  .HowItWorks-part {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    /* min-height: 30vh; */
     width: 100%;
 
   }
+
   .works {
     z-index: 1000;
     height: 300px;
     width: 100%;
     left: 0px;
+
     .content {
-      width:87%;
+      width: 87%;
+
       .title {
         font-size: 25px;
         font-weight: 700;
@@ -1007,7 +1021,7 @@
 
       .video {
         width: 100%;
-       text-align: center;
+        text-align: center;
 
         img {
           margin-left: auto;
@@ -1018,14 +1032,15 @@
 
       .image {
         left: 244px;
-        top: -286px;
+        bottom: 286px;
         width: 197px;
         height: 167px;
       }
     }
 
   }
-  .TrustedBy-part{
+
+  .TrustedBy-part {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -1033,6 +1048,7 @@
     min-height: 40vh;
     width: 100%;
   }
+
   .trusted {
 
     .content {
@@ -1075,7 +1091,8 @@
     }
 
   }
-  .Plans-part{
+
+  .Plans-part {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1084,6 +1101,7 @@
     width: 100%;
 
   }
+
   .plans {
 
 
@@ -1106,7 +1124,7 @@
     }
   }
 
-  .Resources-part{
+  .Resources-part {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1115,6 +1133,7 @@
     width: 100%;
 
   }
+
   .resources {
 
     .content {
@@ -1228,14 +1247,15 @@
     }
   }
 
-  .ContactUs-part{
+  .ContactUs-part {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: flex-end;
     min-height: 80vh;
     width: 100%;
   }
+
   .contact-us {
     z-index: 20;
 
@@ -1349,15 +1369,16 @@
     right: 0px;
   }
 
-  .welcome-part{
+  .welcome-part {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     min-height: 70vh;
     width: 100%;
 
   }
+
   .welcome-text {
 
     top: 190px;
@@ -1703,14 +1724,16 @@
       }
     }
   }
-  .ContactUs-part{
+
+  .ContactUs-part {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: flex-end;
     min-height: 80vh;
     width: 100%;
   }
+
   .contact-us {
     top: 3670px;
     z-index: 20;
@@ -1770,7 +1793,7 @@
   }
 
   .leftBG3 {
-    top: 2875.16px;
+    bottom: 10px;
     width: 791px;
     height: 971px;
   }

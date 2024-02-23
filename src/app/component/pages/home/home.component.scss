@@ -131,6 +131,129 @@
   width: 100%;
 }
 
+.objectives {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1263px !important;
+  margin-left: auto;
+  margin-right: auto;
+
+  .objective-content {
+    width: 80% !important;
+    position: relative;
+    top: 80px;
+
+
+    .title {
+      position: inherit;
+      width: 100% !important;
+      font-size: 25px;
+      font-family: 'Conv_Circular Std Bold';
+      color: #1F1F1F;
+      width: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .sub-title {
+      padding-bottom: 30px;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 40px;
+
+
+      .obj-img {
+        padding-top: 30px;
+        width: 100%;
+        border: 2px dashed #eaedf7;
+        border-radius: 5px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+.rsrc {
+  position: relative;
+  width: 1263px !important;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 90vh;
+  top: 80px;
+
+  .title {
+    position: inherit;
+    width: 100% !important;
+    font-size: 25px;
+    font-family: 'Conv_Circular Std Bold';
+    color: #1F1F1F;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .objective-content {
+      width: 40% !important;
+      position: relative;
+      top: 80px;
+
+      .sub-title {
+        padding-bottom: 30px;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+
+        .obj-img {
+          padding-top: 30px;
+          width: 100%;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+
+.objectives .main-talent .title {
+  position: relative;
+  width: 760px !important;
+  font-size: 45px;
+  font-family: 'Conv_Circular Std Bold';
+  color: #1F1F1F;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.objectives .main-talent .content img {
+
+  width: 200px;
+  height: 200px;
+
+}
 
 .main-talent {
   display: flex;
@@ -151,7 +274,7 @@
     height: 543px;
     background: white;
 
-    .title {
+    .title span {
       width: 100%;
       height: 85px !important;
       text-align: center;
@@ -441,21 +564,24 @@
   justify-content: center;
   min-height: 80vh;
   width: 100%;
-
+  padding-top: 100px;
 }
 
 .resources {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 507px;
 
   .content {
+    display: flex;
+    flex-direction: row;
     font-size: 16px;
     font-weight: 600;
-    width: 1324px;
+    width: 80%;
     text-align: center;
     font-family: 'CircularStd';
     color: #1F1F1F;
@@ -483,7 +609,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
       width: 100%;
       height: 507px;
     }
@@ -924,6 +1050,8 @@
     min-height: 100vh;
     width: 100%;
   }
+
+
 
   .main-talent {
     height: auto;

@@ -5,9 +5,9 @@
   z-index: 2000;
 
   .profile-menu {
-    width: 400px;
+    width: 280px;
     position: relative;
-    top: -20px;
+    bottom: 20px;
     left: 0px;
     font-size: 15px;
     font-family: 'CircularStd';
@@ -16,7 +16,7 @@
     flex-direction: row;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     .profile-text {
       width: 200px !important;

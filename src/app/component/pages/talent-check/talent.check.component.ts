@@ -1,4 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
+import { RequestModelComponent } from '../models/request-model/request.model.component';
+import { NewReferenceModelComponent } from '../models/new-reference-model/new.reference.model.component';
+import { DeleteReferenceModelComponent } from '../models/delete-model/delete.reference.reference.model.component';
 
 @Component({
   selector: 'app-talent-check',
@@ -6,15 +9,19 @@ import { Component, ViewChild } from '@angular/core';
   styleUrl: './talent.check.component.scss'
 })
 export class TalentCheckComponent {
+  @ViewChild(RequestModelComponent) requestModelComponent: any ;
+  @ViewChild(DeleteReferenceModelComponent) deleteReferenceModelComponent: any ;
+  @ViewChild(NewReferenceModelComponent) newReferenceModelComponent: any ;
+
   list = [
-    { text:"" },
-    { text:"" },
-    { text:"" },
-    { text:"" },
-    { text:"" },
-    { text:"" },
-    { text:"" },
-    { text:"" },
+    { text:"" , action:'confirm' },
+    { text:"" , action:'delete' },
+    { text:"" , action:'confirm' },
+    { text:"" , action:'confirm' },
+    { text:"" , action:'confirm' },
+    { text:"" , action:'confirm' },
+    { text:"" , action:'confirm' },
+    { text:"" , action:'confirm' },
 
   ];
 
@@ -29,6 +36,19 @@ export class TalentCheckComponent {
   public complete(value:any){
     console.log("Data -- complete");
 
+  }
+  public OpenConfirmation(item:any){
+    if(item.action =='confirm'){
+      this.requestModelComponent.openPopup();
+    }
+    else{
+      this.deleteReferenceModelComponent.openPopup();
+    }
+
+
+  }
+  public openNewReference(){
+    this.newReferenceModelComponent.openPopup();
   }
 
 

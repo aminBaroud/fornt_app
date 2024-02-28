@@ -3,50 +3,56 @@
     <img src="../../../../assets/img/register/TopMask@2x.svg" class="TopMask" />
   </div>
 
+  <form cForm novalidate (submit)="onSubmit()">
+    <div class="mains">
+      <div class="register">
 
-  <div class="mains">
-    <div class="register">
-
-      <div class="ManRight">
-        <img src="../../../../assets/img/register/ManLeft.png" width="328" />
-      </div>
-      <div class="register-div">
-        <div class="top-button"><a routerLink="/auth/login" class="btn btn-custom-danger form-control">LOG IN</a>
-          <div class="cover"></div>
+        <div class="ManRight">
+          <img src="../../../../assets/img/register/ManLeft.png" width="328" />
         </div>
-        <div class="register-fields">
-          <div class="register-inputs">
-            <div class="title">JOIN US!</div>
-            <div class="register-text">Store and manage your reference check</div>
-            <div class="firstname"><input type="text" class="form-control" name="firstname" id="firstname"
-                placeholder="&#61447; First name"></div>
-            <div class="lastname"><input type="text" class="form-control" name="lastname" id="lastname"
-                placeholder="&#61447; Last name"></div>
-            <div class="email"><input type="email" class="form-control" name="email" id="email"
-                placeholder="&#61664; Email"></div>
-            <div class="phone"><input type="phone" class="form-control" name="phone" id="phone"
-                placeholder="&#61589; Phone"></div>
-            <div class="password"><input type="password" class="form-control" name="password" id="password"
-                placeholder="&#61475; Password"></div>
-            <div class="confirme"><input type="password" class="form-control" name="confirme" id="confirme"
-                placeholder="&#61475; Confirme"></div>
-            <div class="read"><input type="checkbox" name="checked" id="checked" /> Read and accept <a href="#">Terms
-                and conditions</a></div>
-
-            <div class="submit" (click)="submit()"><button class="btn btn-custom-danger form-control">SIGN UP</button>
-            </div>
-            <div class="login"> Already have an account? <a href="/auth/login">Log in!</a></div>
+        <div class="register-div">
+          <div class="top-button"><a routerLink="/auth/login" class="btn btn-custom-danger form-control">LOG IN</a>
+            <div class="cover"></div>
           </div>
-        </div>
-      </div>
-      <div class="ManLeft">
-        <img src="../../../../assets/img/register/ManRight.png" />
-      </div>
 
+          <div class="register-fields">
+            <div class="register-inputs">
+              <div class="title">JOIN US!</div>
+              <div class="register-text">Store and manage your reference check</div>
+
+
+              <div class="firstname"><input type="text" cFormControl class="form-control" name="first_name"
+                  id="firstname" placeholder="&#61447; First name"></div>
+              <div class="lastname"><input type="text" class="form-control" name="last_name" id="lastname"
+                  placeholder="&#61447; Last name"></div>
+              <div class="email"><input type="email" class="form-control" name="email" id="email"
+                  placeholder="&#61664; Email"></div>
+              <div class="phone"><input type="phone" class="form-control" name="phone" id="phone"
+                  placeholder="&#61589; Phone"></div>
+              <div class="password"><input type="password" class="form-control" name="password" id="password"
+                  placeholder="&#61475; Password"></div>
+              <div class="confirme"><input type="password" class="form-control" name="confirm_password" id="confirme"
+                  placeholder="&#61475; Confirm Password"></div>
+              <div class="read"><input type="checkbox" name="checked" id="checked" /> Read and accept <a href="#">Terms
+                  and conditions</a></div>
+
+              <div class="submit" (click)="onSubmit()"><button class="btn btn-custom-danger form-control">SIGN
+                  UP</button>
+              </div>
+              <div class="login"> Already have an account? <a href="/auth/login">Log in!</a></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="ManLeft">
+          <img src="../../../../assets/img/register/ManRight.png" />
+        </div>
+
+
+      </div>
 
     </div>
-
-  </div>
+  </form>
   <div class="ButtomRight">
     <img src="../../../../assets/img/register/ButtomRight@2x.svg" />
   </div>

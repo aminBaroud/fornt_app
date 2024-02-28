@@ -29,7 +29,7 @@ export class AuthService {
     return localStorage.getItem('token') !== null;
   }
 
-  signup(user: User) {
+  signup(user: any) {
     return this.http.post<User>(`${dev.apiUrl}/auth/signup`, user).pipe(
       map((data) => {
         console.log('user data from server ==> ', data);

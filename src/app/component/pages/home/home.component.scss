@@ -369,7 +369,8 @@
 
 
 .works {
-
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 598px;
 
@@ -402,6 +403,7 @@
     }
 
     .video {
+      width: 100%;
       position: relative;
       font-size: 16px;
       font-weight: 600;
@@ -483,8 +485,6 @@
         width: 120px;
       }
     }
-
-
   }
 }
 
@@ -934,6 +934,59 @@
 
   }
 
+
+  .rsrc {
+    position: relative;
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 90vh;
+    top: 80px;
+
+    .title {
+      position: inherit;
+      width: 100% !important;
+      font-size: 25px;
+      font-family: 'Conv_Circular Std Bold';
+      color: #1F1F1F;
+      width: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+
+      .objective-content {
+        width: 60% !important;
+        position: relative;
+        top: 80px;
+
+        .sub-title {
+          padding-bottom: 30px;
+        }
+
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 40px;
+
+          .obj-img {
+            padding-top: 30px;
+            width: 100%;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
   .line {
     top: 10px;
     width: 100%;
@@ -953,6 +1006,58 @@
 
 
   }
+
+
+  .objectives {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    .objective-content {
+      width: 100% !important;
+      position: relative;
+      top: 80px;
+
+
+      .title {
+        position: inherit;
+        width: 100% !important;
+        font-size: 25px;
+        font-family: 'Conv_Circular Std Bold';
+        color: #1F1F1F;
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .sub-title {
+        padding-bottom: 30px;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+
+
+        .obj-img {
+          padding-top: 30px;
+          width: 100%;
+          border: 2px dashed #eaedf7;
+          border-radius: 5px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+
 
   .welcome-text {
     display: flex;
@@ -1060,7 +1165,7 @@
 
     .talent-ckech {
       padding-top: 80px;
-      width: 288px;
+      width: 80%;
       height: 716px;
 
       .title {
@@ -1178,46 +1283,52 @@
   }
 
   .trusted {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 221px;
+    min-height: 30vh;
+
 
     .content {
+      font-size: 16px;
+      font-weight: 600;
+      width: 100%;
+      font-family: 'CircularStd';
+      color: #1F1F1F;
+
       .title {
+        width: 100%;
+        height: 85px !important;
+        text-align: center;
         font-size: 25px;
-        line-height: 67px;
-        font-weight: 700;
+        font-weight: 600;
+        font-family: 'CircularStd';
+        color: #1F1F1F;
 
         .image {
-          left: 108px;
+          position: relative;
+          float: left;
+          width: 0px;
+          left: 509px;
+          top: 10px;
+          z-index: -1;
+        }
+      }
 
-          img {
-            width: 86px;
-          }
+      .images {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .img-element img {
+          width: 10px;
         }
       }
     }
-
-    .images {
-      width: 100%;
-
-      .carousel-container {
-        position: relative;
-        top: 0px;
-        color: white;
-        width: 100%;
-        z-index: 10;
-
-
-        .spotify {
-          width: 100%;
-          text-align: center;
-          height: 150px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-    }
-
   }
 
   .Plans-part {
@@ -1443,8 +1554,27 @@
     display: none !important;
   }
 
+  /*   .mob-tab {
+    display: flex !important;
+  } */
+
   .mob-tab {
     display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    bottom: 20px;
+
+    .slide {
+      .carousel-ele {
+        a {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
   }
 
   .images {
@@ -1457,10 +1587,8 @@
       width: 100%;
       z-index: 10;
 
-
       .spotify {
-        width: 300px;
-        height: 150px;
+        width: 30px;
         display: flex;
         flex-direction: row;
         align-items: center;

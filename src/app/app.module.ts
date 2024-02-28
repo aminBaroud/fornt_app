@@ -1,6 +1,6 @@
-import { HttpClientModule  , HTTP_INTERCEPTORS  } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
@@ -23,9 +23,6 @@ import { SharedModule } from './component/shared/shared.module';
 // Interceptor
 import { InterceptorService } from './_interceptor/interceptor.service';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +38,7 @@ import { InterceptorService } from './_interceptor/interceptor.service';
     SliderComponent,
     TalentCheckComponent,
     StartComponent,
-    CompanyCheckComponent
+    CompanyCheckComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,10 +47,11 @@ import { InterceptorService } from './_interceptor/interceptor.service';
     SharedModule,
     CustomModalsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },
   ],
   bootstrap: [AppComponent],
 })
